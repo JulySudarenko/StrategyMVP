@@ -9,6 +9,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Code/Absractions/IUnitProducer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UserControlSystem.asmdef" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -18,6 +19,7 @@
         <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuilding.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/MouseInteractionPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/BottomLeftUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/BottomLeftUIPresenter.cs" />
       </list>
     </option>
   </component>

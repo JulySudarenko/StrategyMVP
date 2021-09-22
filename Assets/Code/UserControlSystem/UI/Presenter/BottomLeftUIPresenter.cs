@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public sealed class BottomLeftUI : MonoBehaviour
+public sealed class BottomLeftUIPresenter : MonoBehaviour
 {
     [SerializeField] private Image _selectedImage;
     [SerializeField] private Slider _healthSlider;
