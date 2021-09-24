@@ -1,13 +1,12 @@
 ﻿using Interfaces;
-using UnityEditor;
 using UnityEngine;
 
 public class HighlighterPresenter : MonoBehaviour
 {
     [SerializeField] private SelectableValue _selectableValue;
 
-    //private IHighlightable[] _highlighters;
-    private Highlighter[] _highlighters;
+    private IHighlightable[] _highlighters;
+    //private Highlighter[] _highlighters;
     private ISelectable _selectedActual;
 
     private void Start()
@@ -34,9 +33,11 @@ public class HighlighterPresenter : MonoBehaviour
         if (selected != null)
         {
             var selectedComponent = selected as Component;
-            //_highlighters = (selected as Component).GetComponent<IHighlightable[]>();
+            _highlighters = (selected as Component).GetComponentsInParent<IHighlightable>();
+            Highlight(_highlighters, true);
             //_highlighters = (selected as Component).GetComponentsInParent<Highlighter>();
-            var highlighters = (selected as Component)?.GetComponentInParent<Highlighter>();
+            //var highlighters = (selected as Component)?.GetComponentInParent<Highlighter>();
+            //var outlineView = (selected as Component)?.GetComponentInParent<Highlighter>();
             //var f = highlighter.transform.GetComponents<Highlighter>();
             // for (int i = 0; i < _highlighters.Length; i++)
             // {
@@ -47,11 +48,11 @@ public class HighlighterPresenter : MonoBehaviour
         }
     }
 
-    private void Highlight(Highlighter[] highlightables, bool value)
+    private void Highlight(IHighlightable[] highlightables, bool value)
     {
         for (int i = 0; i < highlightables.Length; i++)
         {
-            highlightables[i].ToString();
+            highlightables[i].HighlightSelectedObject(value);
         }
     }
 }

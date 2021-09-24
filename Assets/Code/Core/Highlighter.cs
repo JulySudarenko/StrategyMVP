@@ -2,7 +2,7 @@
 using Interfaces;
 using UnityEngine;
 
-public class Highlighter : MonoBehaviour//, IHighlightable
+public class Highlighter : MonoBehaviour, IHighlightable
 {
     [SerializeField] private MeshRenderer[] _meshRenderers;
     [SerializeField] private Material _highlightMaterial;
