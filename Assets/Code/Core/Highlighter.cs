@@ -7,14 +7,8 @@ public class Highlighter : MonoBehaviour, IHighlightable
     [SerializeField] private MeshRenderer[] _meshRenderers;
     [SerializeField] private Material _highlightMaterial;
     [SerializeField] private GameObject _highlightCircle;
-    //[SerializeField] private bool _isTestSelected;
 
     private bool _isSelectedActual;
-    
-    // private void Update()
-    // {
-    //     HighlightSelectedObject(_isTestSelected);
-    // }
 
     public void HighlightSelectedObject(bool isSelected)
     {

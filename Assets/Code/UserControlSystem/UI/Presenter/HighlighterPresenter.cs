@@ -6,7 +6,6 @@ public class HighlighterPresenter : MonoBehaviour
     [SerializeField] private SelectableValue _selectableValue;
 
     private IHighlightable[] _highlighters;
-    //private Highlighter[] _highlighters;
     private ISelectable _selectedActual;
 
     private void Start()
@@ -35,16 +34,6 @@ public class HighlighterPresenter : MonoBehaviour
             var selectedComponent = selected as Component;
             _highlighters = (selected as Component).GetComponentsInParent<IHighlightable>();
             Highlight(_highlighters, true);
-            //_highlighters = (selected as Component).GetComponentsInParent<Highlighter>();
-            //var highlighters = (selected as Component)?.GetComponentInParent<Highlighter>();
-            //var outlineView = (selected as Component)?.GetComponentInParent<Highlighter>();
-            //var f = highlighter.transform.GetComponents<Highlighter>();
-            // for (int i = 0; i < _highlighters.Length; i++)
-            // {
-            //     _highlighters[i] 
-            // }
-
-            //Highlight(_highlighters, true);
         }
     }
 
