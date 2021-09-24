@@ -1,4 +1,4 @@
-﻿using DefaultNamespace;
+﻿using Interfaces;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -7,7 +7,7 @@ public sealed class BottomLeftUIPresenter : MonoBehaviour
 {
     [SerializeField] private Image _selectedImage;
     [SerializeField] private Slider _healthSlider;
-    [SerializeField] private TextMeshProUGUI  _text;
+    [SerializeField] private TextMeshProUGUI _text;
     [SerializeField] private Image _sliderBackGround;
     [SerializeField] private Image _sliderFillImage;
 
@@ -22,7 +22,7 @@ public sealed class BottomLeftUIPresenter : MonoBehaviour
     private void ONSelected(ISelectable selected)
     {
         _selectedImage.enabled = selected != null;
-        _healthSlider.gameObject.SetActive(selected!=null);
+        _healthSlider.gameObject.SetActive(selected != null);
         _text.enabled = selected != null;
 
         if (selected != null)

@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using DefaultNamespace;
+using Interfaces;
 using UnityEngine;
 
 public class MouseInteractionPresenter : MonoBehaviour
@@ -34,3 +34,5 @@ public class MouseInteractionPresenter : MonoBehaviour
         _selectedObject.SetValue(selectable);
     }
 }
+
+

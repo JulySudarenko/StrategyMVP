@@ -1,5 +1,5 @@
 ﻿using System;
-using DefaultNamespace;
+using Interfaces;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = nameof(SelectableValue), menuName = "Strategy" + nameof(SelectableValue), order = 0)]
