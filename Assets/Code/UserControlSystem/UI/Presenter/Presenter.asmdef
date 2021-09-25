@@ -1,9 +1,9 @@
 {
     "name": "Presenter",
+    "rootNamespace": "",
     "references": [
         "GUID:fdcf25d3544bd734ab2bc9b5d792b932",
         "GUID:5c5ab51d611686a4d86da8dea234e0c6",
-        "GUID:7e8d0d3fd56164f499eb1623944dbeb2",
         "GUID:6055be8ebefd69e48b49212b09b47b2f"
     ],
     "includePlatforms": [],

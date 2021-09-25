@@ -9,6 +9,18 @@
         <e p="Code" t="Include">
           <e p="Absractions" t="Include">
             <e p="Abstractions.asmdef" t="Include" />
+            <e p="Commands" t="Include">
+              <e p="CommandExecutorBase.cs" t="Include" />
+              <e p="CommandInterfaces" t="Include">
+                <e p="IAttackCommand.cs" t="Include" />
+                <e p="IMoveCommand.cs" t="Include" />
+                <e p="IPatrolCommand.cs" t="Include" />
+                <e p="IProduceUnitCommand.cs" t="Include" />
+                <e p="IStopCommand.cs" t="Include" />
+              </e>
+              <e p="ICommand.cs" t="Include" />
+              <e p="ICommandExecutor.cs" t="Include" />
+            </e>
             <e p="IHighlightable.cs" t="Include" />
             <e p="ISelectable.cs" t="Include" />
             <e p="IUnitProducer.cs" t="Include" />
@@ -17,7 +29,6 @@
             <e p="Core.asmdef" t="Include" />
             <e p="Highlighter.cs" t="Include" />
             <e p="MainBuilding.cs" t="Include" />
-            <e p="TestGetComponentH.cs" t="Include" />
           </e>
           <e p="UserControlSystem" t="Include">
             <e p="UI" t="Include">
