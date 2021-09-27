@@ -1,9 +1,8 @@
 ﻿using Interfaces;
 using UnityEngine;
 
-public class MainBuilding : MonoBehaviour, IUnitProducer, ISelectable
+public class MainBuilding : CommandExecutorBase<IProduceUnitCommand>, ISelectable
 {
-    [SerializeField] private GameObject _unitPrefab;
     [SerializeField] private Transform _unitsParent;
     [SerializeField] private Sprite _icon;
     [SerializeField] private float _maxHealth = 1000;
@@ -15,11 +14,10 @@ public class MainBuilding : MonoBehaviour, IUnitProducer, ISelectable
     public float MaxHealth => _maxHealth;
     public Sprite Icon => _icon;
 
-    public void ProduceUnit()
-    {
-        Instantiate(_unitPrefab, CreateRandomPlaceForNewUnit(_unitsParent.position), Quaternion.identity,
-            _unitsParent);
-    }
+    public override void ExecuteSpecificCommand(IProduceUnitCommand command)
+        => Instantiate(command.UnitPrefab,
+            CreateRandomPlaceForNewUnit(_unitsParent.position),
+            Quaternion.identity, _unitsParent);
 
     private Vector3 CreateRandomPlaceForNewUnit(Vector3 parentPlace)
     {
@@ -30,6 +28,4 @@ public class MainBuilding : MonoBehaviour, IUnitProducer, ISelectable
 
         return placeForNewUnit;
     }
-
-
 }

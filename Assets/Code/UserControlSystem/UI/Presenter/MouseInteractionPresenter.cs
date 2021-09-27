@@ -1,10 +1,12 @@
 ﻿using System.Linq;
 using Interfaces;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MouseInteractionPresenter : MonoBehaviour
 {
     [SerializeField] private SelectableValue _selectedObject;
+    [SerializeField] private EventSystem _eventSystem;
     
     private RaycastHit[] _hits;
     private Camera _camera;
@@ -16,11 +18,18 @@ public class MouseInteractionPresenter : MonoBehaviour
 
     void Update()
     {
-        if (!Input.GetMouseButtonDown(0))
+        if (!Input.GetMouseButtonUp(0))
         {
             return;
         }
 
+        if (_eventSystem.IsPointerOverGameObject())
+        {
+            return;
+        }
+        
+        _selectedObject.SetValue(null);
+        
         _hits = Physics.RaycastAll(_camera.ScreenPointToRay(Input.mousePosition));
         if (_hits.Length == 0)
         {

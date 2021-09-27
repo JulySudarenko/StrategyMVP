@@ -22,7 +22,7 @@ public class HighlighterPresenter : MonoBehaviour
         }
 
         _selectedActual = selected;
-        
+
         if (_highlighters != null)
         {
             Highlight(_highlighters, false);
