@@ -9,27 +9,39 @@
         <e p="Code" t="Include">
           <e p="Absractions" t="Include">
             <e p="Abstractions.asmdef" t="Include" />
+            <e p="IHighlightable.cs" t="Include" />
             <e p="ISelectable.cs" t="Include" />
             <e p="IUnitProducer.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
             <e p="Core.asmdef" t="Include" />
+            <e p="Highlighter.cs" t="Include" />
             <e p="MainBuilding.cs" t="Include" />
+            <e p="TestGetComponentH.cs" t="Include" />
           </e>
           <e p="UserControlSystem" t="Include">
-            <e p="BottomLeftUI.cs" t="Include" />
-            <e p="MouseInteractionPresenter.cs" t="Include" />
-            <e p="SelectableValue.cs" t="Include" />
-            <e p="UserControlSystem.asmdef" t="Include" />
+            <e p="UI" t="Include">
+              <e p="Model" t="Include">
+                <e p="Model.asmdef" t="Include" />
+                <e p="SelectableValue.cs" t="Include" />
+              </e>
+              <e p="Presenter" t="Include">
+                <e p="BottomLeftUIPresenter.cs" t="Include" />
+                <e p="HighlighterPresenter.cs" t="Include" />
+                <e p="MouseInteractionPresenter.cs" t="Include" />
+                <e p="Presenter.asmdef" t="Include" />
+              </e>
+            </e>
           </e>
         </e>
       </e>
       <e p="Core.csproj" t="IncludeRecursive" />
+      <e p="Model.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
+      <e p="Presenter.csproj" t="IncludeRecursive" />
       <e p="StrategyMVP.sln" t="IncludeFlat" />
       <e p="Temp\bin" t="ExcludeRecursive" />
-      <e p="UserControlSystem.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

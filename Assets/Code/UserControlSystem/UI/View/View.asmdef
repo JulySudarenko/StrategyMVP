@@ -1,0 +1,15 @@
+{
+    "name": "View",
+    "references": [
+        "GUID:fdcf25d3544bd734ab2bc9b5d792b932"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
