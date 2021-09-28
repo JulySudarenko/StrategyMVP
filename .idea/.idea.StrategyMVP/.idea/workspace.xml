@@ -22,13 +22,19 @@
     <list default="true" id="50351235-d248-4d75-8d5e-15b0dc8ab3da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Chomper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Chomper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/AttackCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/AttackCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/MoveCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/MoveCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/PatrolCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/PatrolCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/StopCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/StopCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Outline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Outline.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/OutlineUnit.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/OutlineUnit.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ChomperFactory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ChomperFactory.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ChomperFactory.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ChomperFactory.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,15 +82,19 @@
         <option value="$PROJECT_DIR$/Assets/Code/Utils/AssetsInjector.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/AttackCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuilding.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Chomper.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Attack.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Patrol.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Stop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Chomper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/AttackCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/MoveCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/PatrolCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/StopCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuilding.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/ProduceUnit.cs" />
       </list>
     </option>
   </component>

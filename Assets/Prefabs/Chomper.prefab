@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 675943523957521392}
-  - component: {fileID: 9056057171452833260}
   - component: {fileID: 5545283037147200454}
   - component: {fileID: 6452554313003290680}
   - component: {fileID: 1134981143997636044}
   - component: {fileID: 8328418866615720591}
   - component: {fileID: 6349435023647657969}
+  - component: {fileID: 2605902940219317547}
   m_Layer: 0
   m_Name: Chomper
   m_TagString: Untagged
@@ -39,20 +39,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9056057171452833260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1184402856757105351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c30056f96fbb43f896952cd2188a2f9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _icon: {fileID: 21300000, guid: fd2810b53a6d7f14bb6ddb7ae2a866a9, type: 3}
-  _maxHealth: 100
 --- !u!114 &5545283037147200454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,6 +104,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209a50f81357416f8015e4659a303757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2605902940219317547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184402856757105351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9b34728abae7414bbef63d8ce8d3a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 21300000, guid: fd2810b53a6d7f14bb6ddb7ae2a866a9, type: 3}
+  _maxHealth: 100
+  _health: 100
 --- !u!1 &4897105491518147070
 GameObject:
   m_ObjectHideFlags: 0

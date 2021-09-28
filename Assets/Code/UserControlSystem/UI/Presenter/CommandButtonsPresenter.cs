@@ -44,48 +44,73 @@ namespace UserControlSystem.UI.Presenter
 
         private void ONButtonClick(ICommandExecutor commandExecutor)
         {
-            // var command = commandExecutor.GetType();
-            // Debug.Log(command.ToString());
-            // switch (Type)
-            // {
-            //     case Attack:
-            //         OnAttackClick(commandExecutor);
-            //         break;
-            //     
-            //     default:
-            //         throw new ApplicationException($"{nameof(CommandButtonsPresenter)}.{nameof(ONButtonClick)}: " +
-            //                                        $"Unknown type of commands executor: {commandExecutor.GetType().FullName}!");
-            //         break;
-            //         
-            // }
-            //
-            // OnProduceUnitClick(commandExecutor);
-
+            var command = commandExecutor.GetType();
+            switch (command.Name)
+            {
+                case "Attack":
+                     OnAttackClick(commandExecutor);
+                    break;
+                case "Move":
+                    OnMoveClick(commandExecutor);
+                    break;
+                case "Patrol":
+                    OnPatrolClick(commandExecutor);
+                    break;
+                case "Stop":
+                    OnStopClick(commandExecutor);
+                    break;
+                case "ProduceUnit":
+                    OnProduceUnitClick(commandExecutor);
+                    break;
+                default:
+                    throw new ApplicationException($"{nameof(CommandButtonsPresenter)}.{nameof(ONButtonClick)}: " +
+                                                   $"Unknown type of commands executor: {commandExecutor.GetType().FullName}!");
+            }
         }
 
         private void OnProduceUnitClick(ICommandExecutor commandExecutor)
         {
-
-
-            var unitProducer = commandExecutor as CommandExecutorBase<IProduceUnitCommand>;
-            if (unitProducer != null)
+            var command = commandExecutor as CommandExecutorBase<IProduceUnitCommand>;
+            if (command != null)
             {
-                unitProducer.ExecuteSpecificCommand(_context.Inject(new ProduceUnitCommand()));
-                return;
+                command.ExecuteSpecificCommand(_context.Inject(new ProduceUnitCommand()));
             }
-            throw new ApplicationException($"{nameof(CommandButtonsPresenter)}.{nameof(ONButtonClick)}: " +
-                                           $"Unknown type of commands executor: {commandExecutor.GetType().FullName}!");
         }
         
         private void OnAttackClick(ICommandExecutor commandExecutor)
         {
-            var unitAttack = commandExecutor as CommandExecutorBase<IAttackCommand>;
-            if (unitAttack != null)
+            var command = commandExecutor as CommandExecutorBase<IAttackCommand>;
+            if (command != null)
             {
-                unitAttack.ExecuteSpecificCommand(new AttackCommand());
+                command.ExecuteSpecificCommand(new AttackCommand());
             }
-            throw new ApplicationException($"{nameof(CommandButtonsPresenter)}.{nameof(ONButtonClick)}: " +
-                                           $"Unknown type of commands executor: {commandExecutor.GetType().FullName}!");
+        }
+
+        private void OnMoveClick(ICommandExecutor commandExecutor)
+        {
+            var command = commandExecutor as CommandExecutorBase<IMoveCommand>;
+            if (command != null)
+            {
+                command.ExecuteSpecificCommand(new MoveCommand());
+            }
+        }
+
+        private void OnPatrolClick(ICommandExecutor commandExecutor)
+        {
+            var command = commandExecutor as CommandExecutorBase<IPatrolCommand>;
+            if (command != null)
+            {
+                command.ExecuteSpecificCommand(new PatrolCommand());
+            }
+        }
+
+        private void OnStopClick(ICommandExecutor commandExecutor)
+        {
+            var command = commandExecutor as CommandExecutorBase<IStopCommand>;
+            if (command != null)
+            {
+                command.ExecuteSpecificCommand(new StopCommand());
+            }
         }
     }
 }

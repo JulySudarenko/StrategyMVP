@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Outline
+  m_Name: OutlineUnit
   m_Shader: {fileID: 4800000, guid: 5e51fc24164824c8cb7bc7a8bfb5fbe7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -66,7 +66,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineWidth: 50
+    - _OutlineWidth: 400
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -76,3 +76,4 @@ Material:
     m_Colors:
     - _Color: {r: 0.9717577, g: 0.990566, b: 0, a: 0.45490196}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []

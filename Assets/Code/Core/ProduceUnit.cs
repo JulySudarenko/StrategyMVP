@@ -1,23 +1,16 @@
 ﻿using Interfaces;
 using UnityEngine;
 
-public class MainBuilding : CommandExecutorBase<IProduceUnitCommand>, ISelectable
+public class ProduceUnit : CommandExecutorBase<IProduceUnitCommand>
 {
     [SerializeField] private Transform _unitsParent;
-    [SerializeField] private Sprite _icon;
-    [SerializeField] private float _maxHealth = 1000;
+    [SerializeField] private Transform _unitPlace;
     [SerializeField] private float _distance = 10.0f;
-
-    private float _health = 1000;
-
-    public float Health => _health;
-    public float MaxHealth => _maxHealth;
-    public Sprite Icon => _icon;
 
     public override void ExecuteSpecificCommand(IProduceUnitCommand command)
         => Instantiate(command.UnitPrefab,
             CreateRandomPlaceForNewUnit(_unitsParent.position),
-            Quaternion.identity, _unitsParent);
+            Quaternion.identity, _unitPlace);
 
     private Vector3 CreateRandomPlaceForNewUnit(Vector3 parentPlace)
     {

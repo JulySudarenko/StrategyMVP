@@ -1,12 +1,11 @@
 ﻿using Interfaces;
 using UnityEngine;
 
-public class Chomper : MonoBehaviour, ISelectable
+public class Selector : MonoBehaviour, ISelectable
 {
     [SerializeField] private Sprite _icon;
-    [SerializeField] private float _maxHealth = 100;
-
-    private float _health = 100;
+    [SerializeField] private float _maxHealth;
+    [SerializeField] private float _health;
 
     public float Health => _health;
     public float MaxHealth => _maxHealth;
