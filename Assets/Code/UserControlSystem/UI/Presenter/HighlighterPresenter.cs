@@ -31,7 +31,6 @@ public class HighlighterPresenter : MonoBehaviour
 
         if (selected != null)
         {
-            var selectedComponent = selected as Component;
             _highlighters = (selected as Component).GetComponentsInParent<IHighlightable>();
             Highlight(_highlighters, true);
         }

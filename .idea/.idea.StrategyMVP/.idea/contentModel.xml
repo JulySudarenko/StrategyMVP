@@ -25,13 +25,22 @@
             <e p="ISelectable.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
+            <e p="Attack.cs" t="Include" />
+            <e p="Chomper.cs" t="Include" />
             <e p="Core.asmdef" t="Include" />
             <e p="Highlighter.cs" t="Include" />
             <e p="MainBuilding.cs" t="Include" />
+            <e p="Move.cs" t="Include" />
+            <e p="Patrol.cs" t="Include" />
+            <e p="Stop.cs" t="Include" />
           </e>
           <e p="UserControlSystem" t="Include">
             <e p="CommandsRealization" t="Include">
+              <e p="AttackCommand.cs" t="Include" />
+              <e p="MoveCommand.cs" t="Include" />
+              <e p="PatrolCommand.cs" t="Include" />
               <e p="ProduceUnitCommand.cs" t="Include" />
+              <e p="StopCommand.cs" t="Include" />
             </e>
             <e p="UI" t="Include">
               <e p="Model" t="Include">
