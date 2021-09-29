@@ -10,6 +10,8 @@ namespace Utils
         public static T Inject<T>(this AssetsContext context, T target)
         {
             var targetType = target.GetType();
+            while (targetType != null)
+            {
             var allFields = targetType.GetFields(BindingFlags.NonPublic
                                                  | BindingFlags.Public
                                                  | BindingFlags.Instance);
@@ -26,6 +28,8 @@ namespace Utils
 
                 var objectToInject = context.GetObjectOfType(fieldInfo.FieldType, injectAssetAttribute.AssetName);
                 fieldInfo.SetValue(target, objectToInject);
+            }
+            targetType = targetType.BaseType;
             }
 
             return target;

@@ -73,7 +73,7 @@ namespace UserControlSystem.UI.Presenter
             var command = commandExecutor as CommandExecutorBase<IProduceUnitCommand>;
             if (command != null)
             {
-                command.ExecuteSpecificCommand(_context.Inject(new ProduceUnitCommand()));
+                command.ExecuteSpecificCommand(_context.Inject(new ProduceUnitCommandHeir()));
             }
         }
         
