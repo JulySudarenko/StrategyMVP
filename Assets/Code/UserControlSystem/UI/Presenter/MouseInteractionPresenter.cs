@@ -43,5 +43,3 @@ public class MouseInteractionPresenter : MonoBehaviour
         _selectedObject.SetValue(selectable);
     }
 }
-
-
