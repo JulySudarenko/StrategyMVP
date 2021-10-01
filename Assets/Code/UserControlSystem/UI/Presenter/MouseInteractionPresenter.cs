@@ -39,14 +39,14 @@ public class MouseInteractionPresenter : MonoBehaviour
         _hits = Physics.RaycastAll(_ray);
         if (Input.GetMouseButtonUp(0))
         {
-            if (weHit<ISelectable>(_hits, out var selectable))
+            if (WeHit<ISelectable>(_hits, out var selectable))
             {
                 _selectedObject.SetValue(selectable);
             }
         }
         else
         {
-            if (weHit<IAttacked>(_hits, out var attackable))
+            if (WeHit<IAttacked>(_hits, out var attackable))
             {
                 _attackedRBM.SetValue(attackable);
             }
@@ -57,7 +57,7 @@ public class MouseInteractionPresenter : MonoBehaviour
         }
     }
     
-    private bool weHit<T>(RaycastHit[] hits, out T result) where T : class
+    private bool WeHit<T>(RaycastHit[] hits, out T result) where T : class
     {
         result = default;
         if (hits.Length == 0)

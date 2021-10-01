@@ -13,7 +13,7 @@ public class AttackCommandCommandCreator : CommandCreatorBase<IAttackCommand>
     [Inject]
     private void Init(AttackedValue groundClicks)
     {
-        groundClicks.OnAttack += OnNewValue;
+        groundClicks.OnNewValue += OnNewValue;
     }
 
     private void OnNewValue(IAttacked attacked)

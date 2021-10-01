@@ -10,7 +10,7 @@ public class HighlighterPresenter : MonoBehaviour
 
     private void Start()
     {
-        _selectableValue.OnSelected += ONSelected;
+        _selectableValue.OnNewValue += ONSelected;
         ONSelected(_selectableValue.CurrentValue);
     }
 

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6295c0f4453de5947a32ec496361d357, type: 3}
   m_Name: StrategyInstaller
   m_EditorClassIdentifier: 
-  _legacyContext: {fileID: 0}
-  _groundClicksRMB: {fileID: 0}
-  _attackableClicksRMB: {fileID: 0}
-  _selectables: {fileID: 0}
+  _legacyContext: {fileID: 11400000, guid: bff324431f7c08c488edb89905c62d0e, type: 2}
+  _groundClicksRMB: {fileID: 11400000, guid: 849c282593bce0a449d92ebcea4de2f9, type: 2}
+  _attackableClicksRMB: {fileID: 11400000, guid: 4a2482defe803de489bf183183d9548f,
+    type: 2}
+  _selectables: {fileID: 11400000, guid: 03960b60e2b90a54ab65fab1f6cafc87, type: 2}

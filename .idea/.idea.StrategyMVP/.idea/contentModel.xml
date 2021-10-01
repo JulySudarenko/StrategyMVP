@@ -63,6 +63,7 @@
                   <e p="StopCommandCommandCreator.cs" t="Include" />
                 </e>
                 <e p="Model.asmdef" t="Include" />
+                <e p="ScriptableModelBase.cs" t="Include" />
                 <e p="SelectableValue.cs" t="Include" />
                 <e p="UiModelInstaller.cs" t="Include" />
                 <e p="Vector3Value.cs" t="Include" />
