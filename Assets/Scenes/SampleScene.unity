@@ -2243,6 +2243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _legacyContext: {fileID: 11400000, guid: bff324431f7c08c488edb89905c62d0e, type: 2}
   _goundClicksRMB: {fileID: 11400000, guid: 849c282593bce0a449d92ebcea4de2f9, type: 2}
+  _attackedRMB: {fileID: 11400000, guid: 4a2482defe803de489bf183183d9548f, type: 2}
 --- !u!1 &1023732704
 GameObject:
   m_ObjectHideFlags: 0

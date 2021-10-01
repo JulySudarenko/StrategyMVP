@@ -7,5 +7,6 @@ namespace Interfaces
         float Health { get; }
         float MaxHealth { get; }
         Sprite Icon { get; }
+        Transform PositionPoint { get; }
     }
 }

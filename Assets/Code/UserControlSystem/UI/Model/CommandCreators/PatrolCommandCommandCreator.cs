@@ -8,18 +8,20 @@ using Zenject;
 public class PatrolCommandCommandCreator : CommandCreatorBase<IPatrolCommand>
 {
     [Inject] private AssetsContext _context;
+    [Inject] private SelectableValue _selectable;
 
     private Action<IPatrolCommand> _creationCallback;
 
     [Inject]
     private void Init(Vector3Value groundClicks)
     {
-        groundClicks.OnNewValue += ONNewValue;
+        groundClicks.OnNewValue += OnNewValue;
     }
 
-    private void ONNewValue(Vector3 groundClick)
+    private void OnNewValue(Vector3 groundClick)
     {
-        _creationCallback?.Invoke(_context.Inject(new PatrolCommand(groundClick, groundClick)));
+        _creationCallback?.Invoke(_context.Inject(new PatrolCommand(
+            _selectable.CurrentValue.PositionPoint.position, groundClick)));
         _creationCallback = null;
     }
 

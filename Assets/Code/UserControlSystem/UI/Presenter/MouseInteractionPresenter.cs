@@ -66,8 +66,7 @@ public class MouseInteractionPresenter : MonoBehaviour
         }    
         result = hits
             .Select(hit => hit.collider.GetComponentInParent<T>())
-            .Where(c => c != null)
-            .FirstOrDefault();
+            .FirstOrDefault(c => c != null);
         return result != default;
     }
 }
