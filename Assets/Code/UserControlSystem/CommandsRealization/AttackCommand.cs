@@ -5,10 +5,11 @@ namespace CommandsRealization
 {
     public sealed class AttackCommand : IAttackCommand
     {
-
-        public AttackCommand()
+        public IAttacked Target { get; }
+        public AttackCommand(IAttacked target)
         {
-            Debug.Log("Attack constructor is work");
+            Target = target;
+            Debug.Log($"Attack constructor is work. Target is {target}");
         }
     }
 }

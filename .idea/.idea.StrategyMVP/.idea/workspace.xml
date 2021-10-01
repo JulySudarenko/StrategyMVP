@@ -22,23 +22,23 @@
     <list default="true" id="50351235-d248-4d75-8d5e-15b0dc8ab3da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IMoveCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IMoveCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Attack.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Attack.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Move.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Move.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Patrol.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Patrol.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/ProduceUnit.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/ProduceUnit.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Stop.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Stop.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/MoveCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/MoveCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IAttackCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IAttackCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IPatrolCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IPatrolCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Absractions/IHighlightable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Absractions/IHighlightable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/AttackCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/AttackCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/PatrolCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/PatrolCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/AttackCommandCommandCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/AttackCommandCommandCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/CommandCreatorBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/CommandCreatorBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/MoveCommandCommandCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/MoveCommandCommandCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/PatrolCommandCommandCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/PatrolCommandCommandCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/ProduceUnitCommandCommandCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/ProduceUnitCommandCommandCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/StopCommandCommandCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/StopCommandCommandCreator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/UiModelInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/UiModelInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ChomperFactory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ChomperFactory.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/GoundClicksRMB.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObject/GoundClicksRMB.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +84,6 @@
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Chomper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/AttackCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/PatrolCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/StopCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuilding.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Utils/AssetsInjector.cs" />
@@ -93,7 +91,6 @@
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommandHeir.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/CommandButtonsView.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/ProduceUnitCommandCommandCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/SelectableValue.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IMoveCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/Vector3Value.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/MoveCommand.cs" />
@@ -105,7 +102,18 @@
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/MoveCommandCommandCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IAttackCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/AttackCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/IHighlightable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Selector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IPatrolCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/PatrolCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/SelectableValue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/AttackCommandCommandCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/CommandCreatorBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/PatrolCommandCommandCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Attacked.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/UiModelInstaller.cs" />
       </list>
     </option>
@@ -238,10 +246,14 @@
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1506" height="288" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state x="2517" y="-68" key="RiderGenerateDialog" timestamp="1632802172167">
+    <state x="2517" y="-68" key="RiderGenerateDialog" timestamp="1633068932606">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state x="2517" y="-68" key="RiderGenerateDialog/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632802172167" />
+    <state x="2517" y="-68" key="RiderGenerateDialog/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633068932606" />
+    <state x="2350" y="-1" width="672" height="678" key="search.everywhere.popup" timestamp="1633068133081">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state x="2350" y="-1" width="672" height="678" key="search.everywhere.popup/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633068133081" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

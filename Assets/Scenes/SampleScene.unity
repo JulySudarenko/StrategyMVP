@@ -679,8 +679,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _selectedObject: {fileID: 11400000, guid: 03960b60e2b90a54ab65fab1f6cafc87, type: 2}
   _eventSystem: {fileID: 1216800089}
-  _groundClicksRMB: {fileID: 0}
-  _groundTransform: {fileID: 0}
+  _groundClicksRMB: {fileID: 11400000, guid: 849c282593bce0a449d92ebcea4de2f9, type: 2}
+  _attackedRBM: {fileID: 11400000, guid: 4a2482defe803de489bf183183d9548f, type: 2}
+  _groundTransform: {fileID: 1410338307}
 --- !u!114 &565889501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2241,6 +2242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _legacyContext: {fileID: 11400000, guid: bff324431f7c08c488edb89905c62d0e, type: 2}
+  _goundClicksRMB: {fileID: 11400000, guid: 849c282593bce0a449d92ebcea4de2f9, type: 2}
 --- !u!1 &1023732704
 GameObject:
   m_ObjectHideFlags: 0

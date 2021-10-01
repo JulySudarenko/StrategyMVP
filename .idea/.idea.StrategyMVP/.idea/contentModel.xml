@@ -21,10 +21,12 @@
               <e p="ICommand.cs" t="Include" />
               <e p="ICommandExecutor.cs" t="Include" />
             </e>
+            <e p="IAttacked.cs" t="Include" />
             <e p="IHighlightable.cs" t="Include" />
             <e p="ISelectable.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
+            <e p="Attacked.cs" t="Include" />
             <e p="CommandExecutor" t="Include">
               <e p="AttackCommandExecutor.cs" t="Include" />
               <e p="MoveCommandExecutor.cs" t="Include" />
@@ -48,6 +50,7 @@
             </e>
             <e p="UI" t="Include">
               <e p="Model" t="Include">
+                <e p="AttackedValue.cs" t="Include" />
                 <e p="CommandCreators" t="Include">
                   <e p="AttackCommandCommandCreator.cs" t="Include" />
                   <e p="CommandButtonsModel.cs" t="Include" />

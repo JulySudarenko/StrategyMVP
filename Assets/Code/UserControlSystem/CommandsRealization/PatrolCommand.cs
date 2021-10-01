@@ -5,9 +5,13 @@ namespace CommandsRealization
 {
     public sealed class PatrolCommand : IPatrolCommand
     {
-        public PatrolCommand()
+        public Vector3 GoFrom { get; }
+        public Vector3 GoTo { get; }
+
+        public PatrolCommand(Vector3 goFrom, Vector3 goTo)
         {
-            Debug.Log("Patrol constructor is work");
+            GoFrom = goFrom;
+            GoTo = goTo;
         }
     }
 }

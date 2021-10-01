@@ -7,10 +7,11 @@ public class MouseInteractionPresenter : MonoBehaviour
 {
     [SerializeField] private SelectableValue _selectedObject;
     [SerializeField] private EventSystem _eventSystem;
-   
+
     [SerializeField] private Vector3Value _groundClicksRMB;
+    [SerializeField] private AttackedValue _attackedRBM;
     [SerializeField] private Transform _groundTransform;
-    
+
     private RaycastHit[] _hits;
     private Plane _groundPlane;
     private Camera _camera;
@@ -33,32 +34,40 @@ public class MouseInteractionPresenter : MonoBehaviour
         {
             return;
         }
-        
-        //_selectedObject.SetValue(null);
-        
-        var _ray = _camera.ScreenPointToRay(Input.mousePosition);
 
+        _ray = _camera.ScreenPointToRay(Input.mousePosition);
+        _hits = Physics.RaycastAll(_ray);
         if (Input.GetMouseButtonUp(0))
         {
-            _hits = Physics.RaycastAll(_ray);
-            if (_hits.Length == 0)
+            if (weHit<ISelectable>(_hits, out var selectable))
             {
-                return;
+                _selectedObject.SetValue(selectable);
             }
-
-            var selectable = _hits
-                .Select(hit => hit.collider.GetComponentInParent<ISelectable>())
-                .Where(c=> c!=null)
-                .FirstOrDefault();
-
-            _selectedObject.SetValue(selectable);
         }
         else
         {
-            if (_groundPlane.Raycast(_ray, out var enter))
+            if (weHit<IAttacked>(_hits, out var attackable))
+            {
+                _attackedRBM.SetValue(attackable);
+            }
+            else if (_groundPlane.Raycast(_ray, out var enter))
             {
                 _groundClicksRMB.SetValue(_ray.origin + _ray.direction * enter);
             }
         }
+    }
+    
+    private bool weHit<T>(RaycastHit[] hits, out T result) where T : class
+    {
+        result = default;
+        if (hits.Length == 0)
+        {
+            return false;
+        }    
+        result = hits
+            .Select(hit => hit.collider.GetComponentInParent<T>())
+            .Where(c => c != null)
+            .FirstOrDefault();
+        return result != default;
     }
 }
