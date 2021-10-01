@@ -1,10 +1,13 @@
 {
     "name": "Presenter",
+    "rootNamespace": "",
     "references": [
         "GUID:fdcf25d3544bd734ab2bc9b5d792b932",
         "GUID:5c5ab51d611686a4d86da8dea234e0c6",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
         "GUID:7e8d0d3fd56164f499eb1623944dbeb2",
-        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+        "GUID:62297239cf4416c489eea1ee9dab6221",
+        "GUID:54ae3058c11000a44ad9509a4ce00000"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

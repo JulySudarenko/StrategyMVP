@@ -9,17 +9,40 @@
         <e p="Code" t="Include">
           <e p="Absractions" t="Include">
             <e p="Abstractions.asmdef" t="Include" />
+            <e p="Commands" t="Include">
+              <e p="CommandExecutorBase.cs" t="Include" />
+              <e p="CommandInterfaces" t="Include">
+                <e p="IAttackCommand.cs" t="Include" />
+                <e p="IMoveCommand.cs" t="Include" />
+                <e p="IPatrolCommand.cs" t="Include" />
+                <e p="IProduceUnitCommand.cs" t="Include" />
+                <e p="IStopCommand.cs" t="Include" />
+              </e>
+              <e p="ICommand.cs" t="Include" />
+              <e p="ICommandExecutor.cs" t="Include" />
+            </e>
             <e p="IHighlightable.cs" t="Include" />
             <e p="ISelectable.cs" t="Include" />
-            <e p="IUnitProducer.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
+            <e p="Attack.cs" t="Include" />
             <e p="Core.asmdef" t="Include" />
             <e p="Highlighter.cs" t="Include" />
-            <e p="MainBuilding.cs" t="Include" />
-            <e p="TestGetComponentH.cs" t="Include" />
+            <e p="Move.cs" t="Include" />
+            <e p="Patrol.cs" t="Include" />
+            <e p="ProduceUnit.cs" t="Include" />
+            <e p="Selector.cs" t="Include" />
+            <e p="Stop.cs" t="Include" />
           </e>
           <e p="UserControlSystem" t="Include">
+            <e p="CommandsRealization" t="Include">
+              <e p="AttackCommand.cs" t="Include" />
+              <e p="MoveCommand.cs" t="Include" />
+              <e p="PatrolCommand.cs" t="Include" />
+              <e p="ProduceUnitCommand.cs" t="Include" />
+              <e p="ProduceUnitCommandHeir.cs" t="Include" />
+              <e p="StopCommand.cs" t="Include" />
+            </e>
             <e p="UI" t="Include">
               <e p="Model" t="Include">
                 <e p="Model.asmdef" t="Include" />
@@ -27,11 +50,23 @@
               </e>
               <e p="Presenter" t="Include">
                 <e p="BottomLeftUIPresenter.cs" t="Include" />
+                <e p="CommandButtonsPresenter.cs" t="Include" />
                 <e p="HighlighterPresenter.cs" t="Include" />
                 <e p="MouseInteractionPresenter.cs" t="Include" />
                 <e p="Presenter.asmdef" t="Include" />
               </e>
+              <e p="View" t="Include">
+                <e p="CommandButtonsView.cs" t="Include" />
+                <e p="View.asmdef" t="Include" />
+              </e>
             </e>
+            <e p="UserControlSystem.asmdef" t="Include" />
+          </e>
+          <e p="Utils" t="Include">
+            <e p="AssetsContext.cs" t="Include" />
+            <e p="AssetsInjector.cs" t="Include" />
+            <e p="InjectAssetAtribute.cs" t="Include" />
+            <e p="Utils.asmdef" t="Include" />
           </e>
         </e>
       </e>
@@ -42,6 +77,9 @@
       <e p="Presenter.csproj" t="IncludeRecursive" />
       <e p="StrategyMVP.sln" t="IncludeFlat" />
       <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="UserControlSystem.csproj" t="IncludeRecursive" />
+      <e p="Utils.csproj" t="IncludeRecursive" />
+      <e p="View.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>
