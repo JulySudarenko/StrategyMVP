@@ -1,15 +1,15 @@
 ﻿using System;
-using CommandsRealization;
 using Interfaces;
+using UnityEngine;
 using Utils;
 using Zenject;
 
 public class StopCommandCommandCreator : CommandCreatorBase<IStopCommand>
 {
-    [Inject] private AssetsContext _context;
+    [Inject] private SelectableValue _selectable;
 
     protected override void ClassSpecificCommandCreation(Action<IStopCommand> creationCallback)
     {
-        creationCallback?.Invoke(_context.Inject(new StopCommand()));
+        Debug.Log($"Command stop in point {_selectable.CurrentValue.PositionPoint.position}");
     }
 }

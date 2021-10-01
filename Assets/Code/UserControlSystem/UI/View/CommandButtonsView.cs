@@ -62,9 +62,7 @@ namespace View
         private GameObject getButtonGameObjectByType(Type executorInstanceType)
         {
             return _buttonsByExecutorType
-                .Where(type =>
-                    type.Key.IsAssignableFrom(executorInstanceType))
-                .First()
+                .First(type => type.Key.IsAssignableFrom(executorInstanceType))
                 .Value;
         }
 

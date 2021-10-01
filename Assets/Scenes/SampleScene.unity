@@ -1230,7 +1230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &736730090
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2244,6 +2244,7 @@ MonoBehaviour:
   _legacyContext: {fileID: 11400000, guid: bff324431f7c08c488edb89905c62d0e, type: 2}
   _goundClicksRMB: {fileID: 11400000, guid: 849c282593bce0a449d92ebcea4de2f9, type: 2}
   _attackedRMB: {fileID: 11400000, guid: 4a2482defe803de489bf183183d9548f, type: 2}
+  _selectableValue: {fileID: 11400000, guid: 03960b60e2b90a54ab65fab1f6cafc87, type: 2}
 --- !u!1 &1023732704
 GameObject:
   m_ObjectHideFlags: 0
@@ -3070,7 +3071,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!23 &1306702423
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3453,7 +3454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1532356155
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4076,7 +4077,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1768133050
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4468,7 +4469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1903939050
 RectTransform:
   m_ObjectHideFlags: 0
