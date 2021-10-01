@@ -7,18 +7,24 @@ public class MouseInteractionPresenter : MonoBehaviour
 {
     [SerializeField] private SelectableValue _selectedObject;
     [SerializeField] private EventSystem _eventSystem;
+   
+    [SerializeField] private Vector3Value _groundClicksRMB;
+    [SerializeField] private Transform _groundTransform;
     
     private RaycastHit[] _hits;
+    private Plane _groundPlane;
     private Camera _camera;
+    private Ray _ray;
 
     void Start()
     {
         _camera = Camera.main;
+        _groundPlane = new Plane(_groundTransform.up, 0);
     }
 
     void Update()
     {
-        if (!Input.GetMouseButtonUp(0))
+        if (!Input.GetMouseButtonUp(0) && !Input.GetMouseButton(1))
         {
             return;
         }
@@ -28,18 +34,31 @@ public class MouseInteractionPresenter : MonoBehaviour
             return;
         }
         
-        _selectedObject.SetValue(null);
+        //_selectedObject.SetValue(null);
         
-        _hits = Physics.RaycastAll(_camera.ScreenPointToRay(Input.mousePosition));
-        if (_hits.Length == 0)
+        var _ray = _camera.ScreenPointToRay(Input.mousePosition);
+
+        if (Input.GetMouseButtonUp(0))
         {
-            return;
+            _hits = Physics.RaycastAll(_ray);
+            if (_hits.Length == 0)
+            {
+                return;
+            }
+
+            var selectable = _hits
+                .Select(hit => hit.collider.GetComponentInParent<ISelectable>())
+                .Where(c=> c!=null)
+                .FirstOrDefault();
+
+            _selectedObject.SetValue(selectable);
         }
-
-        var selectable = _hits
-            .Select(hit => hit.collider.GetComponentInParent<ISelectable>())
-            .FirstOrDefault(c => c != null);
-
-        _selectedObject.SetValue(selectable);
+        else
+        {
+            if (_groundPlane.Raycast(_ray, out var enter))
+            {
+                _groundClicksRMB.SetValue(_ray.origin + _ray.direction * enter);
+            }
+        }
     }
 }

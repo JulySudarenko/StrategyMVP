@@ -2,5 +2,6 @@
 {
     public interface IAttackCommand : ICommand
     {
+
     }
 }

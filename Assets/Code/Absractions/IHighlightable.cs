@@ -4,4 +4,5 @@
     {
         void HighlightSelectedObject(bool isSelected);
     }
+
 }

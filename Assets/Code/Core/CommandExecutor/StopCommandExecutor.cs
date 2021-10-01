@@ -1,7 +1,7 @@
 ﻿using Interfaces;
 using UnityEngine;
 
-public class Stop : CommandExecutorBase<IStopCommand>
+public class StopCommandExecutor : CommandExecutorBase<IStopCommand>
 {
     public override void ExecuteSpecificCommand(IStopCommand command)
     {

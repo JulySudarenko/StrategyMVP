@@ -1,7 +1,7 @@
 ﻿using Interfaces;
 using UnityEngine;
 
-public class ProduceUnit : CommandExecutorBase<IProduceUnitCommand>
+public class ProduceUnitCommandExecutor : CommandExecutorBase<IProduceUnitCommand>
 {
     [SerializeField] private Transform _unitsParent;
     [SerializeField] private Transform _unitPlace;

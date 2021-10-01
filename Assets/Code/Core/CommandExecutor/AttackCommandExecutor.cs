@@ -1,7 +1,7 @@
 ﻿using Interfaces;
 using UnityEngine;
 
-public class Attack : CommandExecutorBase<IAttackCommand>
+public class AttackCommandExecutor : CommandExecutorBase<IAttackCommand>
 {
     public override void ExecuteSpecificCommand(IAttackCommand command)
     {

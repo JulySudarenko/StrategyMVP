@@ -25,14 +25,16 @@
             <e p="ISelectable.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
-            <e p="Attack.cs" t="Include" />
+            <e p="CommandExecutor" t="Include">
+              <e p="AttackCommandExecutor.cs" t="Include" />
+              <e p="MoveCommandExecutor.cs" t="Include" />
+              <e p="PatrolCommandExecutor.cs" t="Include" />
+              <e p="ProduceUnitCommandExecutor.cs" t="Include" />
+              <e p="StopCommandExecutor.cs" t="Include" />
+            </e>
             <e p="Core.asmdef" t="Include" />
             <e p="Highlighter.cs" t="Include" />
-            <e p="Move.cs" t="Include" />
-            <e p="Patrol.cs" t="Include" />
-            <e p="ProduceUnit.cs" t="Include" />
             <e p="Selector.cs" t="Include" />
-            <e p="Stop.cs" t="Include" />
           </e>
           <e p="UserControlSystem" t="Include">
             <e p="CommandsRealization" t="Include">
@@ -58,6 +60,7 @@
                 <e p="Model.asmdef" t="Include" />
                 <e p="SelectableValue.cs" t="Include" />
                 <e p="UiModelInstaller.cs" t="Include" />
+                <e p="Vector3Value.cs" t="Include" />
               </e>
               <e p="Presenter" t="Include">
                 <e p="BottomLeftUIPresenter.cs" t="Include" />

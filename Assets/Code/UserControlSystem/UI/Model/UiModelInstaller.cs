@@ -6,10 +6,12 @@ using Zenject;
 public class UiModelInstaller : MonoInstaller
 {
     [SerializeField] private AssetsContext _legacyContext;
-
+    [SerializeField] private Vector3Value _goundClicksRMB;
+    
     public override void InstallBindings()
     {
         Container.Bind<AssetsContext>().FromInstance(_legacyContext);
+        Container.Bind<Vector3Value>().FromInstance(_goundClicksRMB);
 
         Container.Bind<CommandCreatorBase<IProduceUnitCommand>>()
             .To<ProduceUnitCommandCommandCreator>().AsTransient();

@@ -20,11 +20,11 @@ public class CommandButtonsPresenter : MonoBehaviour
         _model.OnCommandCancel += _view.UnblockAllInteractions;
         _model.OnCommandAccepted += _view.BlockInteractions;
 
-        _selectable.OnSelected += onSelected;
-        onSelected(_selectable.CurrentValue);
+        _selectable.OnSelected += ONSelected;
+        ONSelected(_selectable.CurrentValue);
     }
 
-    private void onSelected(ISelectable selectable)
+    private void ONSelected(ISelectable selectable)
     {
         if (_currentSelectable == selectable)
         {
