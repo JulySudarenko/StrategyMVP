@@ -9,7 +9,7 @@ public class MouseInteractionPresenter : MonoBehaviour
     [SerializeField] private EventSystem _eventSystem;
 
     [SerializeField] private Vector3Value _groundClicksRMB;
-    [SerializeField] private AttackedValue _attackedRBM;
+    [SerializeField] private AttackableValue _attackedRBM;
     [SerializeField] private Transform _groundTransform;
 
     private RaycastHit[] _hits;
@@ -46,7 +46,7 @@ public class MouseInteractionPresenter : MonoBehaviour
         }
         else
         {
-            if (WeHit<IAttacked>(_hits, out var attackable))
+            if (WeHit<IAttackable>(_hits, out var attackable))
             {
                 _attackedRBM.SetValue(attackable);
             }

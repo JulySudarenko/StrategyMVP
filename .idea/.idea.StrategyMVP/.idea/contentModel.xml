@@ -22,9 +22,11 @@
               <e p="ICommand.cs" t="Include" />
               <e p="ICommandExecutor.cs" t="Include" />
             </e>
-            <e p="IAttacked.cs" t="Include" />
+            <e p="IAttackable.cs" t="Include" />
+            <e p="IHealthHolder.cs" t="Include" />
             <e p="IHighlightable.cs" t="Include" />
             <e p="ISelectable.cs" t="Include" />
+            <e p="ScriptableObjectValueBase.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
             <e p="Attacked.cs" t="Include" />
@@ -52,9 +54,10 @@
             </e>
             <e p="UI" t="Include">
               <e p="Model" t="Include">
-                <e p="AttackedValue.cs" t="Include" />
+                <e p="AttackableValue.cs" t="Include" />
                 <e p="CommandCreators" t="Include">
                   <e p="AttackCommandCommandCreator.cs" t="Include" />
+                  <e p="CancellableCommandCreatorBase.cs" t="Include" />
                   <e p="CommandButtonsModel.cs" t="Include" />
                   <e p="CommandCreatorBase.cs" t="Include" />
                   <e p="MoveCommandCommandCreator.cs" t="Include" />
@@ -63,7 +66,6 @@
                   <e p="StopCommandCommandCreator.cs" t="Include" />
                 </e>
                 <e p="Model.asmdef" t="Include" />
-                <e p="ScriptableModelBase.cs" t="Include" />
                 <e p="SelectableValue.cs" t="Include" />
                 <e p="UiModelInstaller.cs" t="Include" />
                 <e p="Vector3Value.cs" t="Include" />
@@ -84,6 +86,9 @@
           <e p="Utils" t="Include">
             <e p="AssetsContext.cs" t="Include" />
             <e p="AssetsInjector.cs" t="Include" />
+            <e p="AsyncExtensions.cs" t="Include" />
+            <e p="IAwaitable.cs" t="Include" />
+            <e p="IAwaiter.cs" t="Include" />
             <e p="InjectAssetAtribute.cs" t="Include" />
             <e p="Utils.asmdef" t="Include" />
           </e>
