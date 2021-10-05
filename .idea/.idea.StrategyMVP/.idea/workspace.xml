@@ -22,9 +22,8 @@
     <list default="true" id="50351235-d248-4d75-8d5e-15b0dc8ab3da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Absractions/ScriptableObjectValueBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Absractions/ScriptableObjectValueBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UnitMovementStop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/UnitMovementStop.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/ProduceUnitCommandCommandCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IMoveCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/MoveCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Attack.cs" />
@@ -103,10 +101,11 @@
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/AttackCommandCommandCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/StrategyInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/NewValueNotifier.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/ScriptableObjectValueBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Selector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/UnitMovementStop.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/AwaiterBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/ScriptableObjectValueBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/UnitMovementStop.cs" />
       </list>
     </option>
   </component>
@@ -238,10 +237,10 @@
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="282" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633099924092" />
-    <state x="2517" y="-68" key="RiderGenerateDialog" timestamp="1633423023478">
+    <state x="2517" y="-68" key="RiderGenerateDialog" timestamp="1633436829303">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state x="2517" y="-68" key="RiderGenerateDialog/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633423023478" />
+    <state x="2517" y="-68" key="RiderGenerateDialog/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633436829303" />
     <state x="2350" y="-1" width="672" height="678" key="search.everywhere.popup" timestamp="1633068133081">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>

@@ -10,6 +10,7 @@
         <e p="Code" t="Include">
           <e p="Absractions" t="Include">
             <e p="Abstractions.asmdef" t="Include" />
+            <e p="AwaitedBase.cs" t="Include" />
             <e p="Commands" t="Include">
               <e p="CommandExecutorBase.cs" t="Include" />
               <e p="CommandInterfaces" t="Include">
