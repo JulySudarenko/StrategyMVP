@@ -22,10 +22,16 @@
     <list default="true" id="50351235-d248-4d75-8d5e-15b0dc8ab3da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/AttackedValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/AttackedValue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/AttackCommandCommandCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/AttackCommandCommandCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/SelectableValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/SelectableValue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/Vector3Value.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/Vector3Value.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomLeftUIPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomLeftUIPresenter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Utils/AssetsInjector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Utils/AssetsInjector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/StrategyInstaller.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObject/StrategyInstaller.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,15 +42,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Utils/AssetsInjector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../FirstAndrey18/Assets/Standard Assets/CrossPlatformInput/Scripts/MobileControlRig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29AD182F-AA3F-478C-9310-D6A2E7143C15/ea/4cbb7152/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/CommandButtonsView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2019.4.16f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/View.asmdef" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/View.asmdef" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UserControlSystem.asmdef" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FirstAndrey18/Assets/Environment/Code/Inventar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../FirstAndrey18/Assets/Environment/Code/LazerFPS.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2019.4.16f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2019.4.16f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -53,39 +63,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/SelectableValue.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/MouseInteractionPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/BottomLeftUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/BottomLeftUIPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/IUnitProducer.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/Highlighter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/TestGetComponentH.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/ISelectable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/ICommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandExecutorBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/CommandButtonsView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomLeftUIPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandsRealization/ProduceUnitCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Utils/AssetsContext.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/SelectableValue.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Utils/InjectAssetAtribute.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Attack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Patrol.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Stop.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Chomper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/AttackCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/MoveCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/PatrolCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/StopCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuilding.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/ProduceUnit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Utils/AssetsInjector.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommandHeir.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/ProduceUnitCommandCommandCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IMoveCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/MoveCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Attack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Move.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Patrol.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Stop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/ProduceUnit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IAttackCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/AttackCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/IHighlightable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IPatrolCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/PatrolCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/CommandCreatorBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Attacked.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/ISelectable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/AttackCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/PatrolCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Selector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/PatrolCommandCommandCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IStopCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/StopCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/StopCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/CommandButtonsView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/StopCommandCommandCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/StrategyInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/StrategyInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/UiModelInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomLeftUIPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/SelectableValue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/AttackCommandCommandCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/AttackedValue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/MoveCommandCommandCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/Vector3Value.cs" />
       </list>
     </option>
   </component>
@@ -100,18 +128,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35050848" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30033898" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502052" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3002736" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18328">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="18328" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -153,90 +181,94 @@
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="642" height="464" key="DebuggerActiveHint/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632405969747" />
-    <state width="1506" height="288" key="GridCell.Tab.0.bottom" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.0.bottom" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.0.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.0.center" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.0.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state width="1493" height="282" key="GridCell.Tab.0.center" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.0.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.0.left" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.0.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state width="1493" height="282" key="GridCell.Tab.0.left" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.0.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.0.right" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.0.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state width="1493" height="282" key="GridCell.Tab.0.right" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.0.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.1.bottom" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.0.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state width="1493" height="282" key="GridCell.Tab.1.bottom" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.1.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.1.center" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.1.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state width="1493" height="282" key="GridCell.Tab.1.center" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.1.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.1.left" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.1.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state width="1493" height="282" key="GridCell.Tab.1.left" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.1.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.1.right" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.1.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state width="1493" height="282" key="GridCell.Tab.1.right" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.1.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.2.bottom" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.1.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state width="1493" height="282" key="GridCell.Tab.2.bottom" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.2.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.2.center" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.2.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state width="1493" height="282" key="GridCell.Tab.2.center" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.2.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.2.left" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.2.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state width="1493" height="282" key="GridCell.Tab.2.left" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.2.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.2.right" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.2.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state width="1493" height="282" key="GridCell.Tab.2.right" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.2.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.3.bottom" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.2.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state width="1493" height="282" key="GridCell.Tab.3.bottom" timestamp="1633088436268">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.3.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.3.center" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.3.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436268" />
+    <state width="1493" height="282" key="GridCell.Tab.3.center" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.3.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.3.left" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.3.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state width="1493" height="282" key="GridCell.Tab.3.left" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.3.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state width="1506" height="288" key="GridCell.Tab.3.right" timestamp="1632762037493">
+    <state width="1493" height="282" key="GridCell.Tab.3.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state width="1493" height="282" key="GridCell.Tab.3.right" timestamp="1633088436267">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1506" height="288" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632762037493" />
-    <state x="2517" y="-68" key="RiderGenerateDialog" timestamp="1632802172167">
+    <state width="1493" height="282" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633088436267" />
+    <state x="2517" y="-68" key="RiderGenerateDialog" timestamp="1633068932606">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state x="2517" y="-68" key="RiderGenerateDialog/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1632802172167" />
+    <state x="2517" y="-68" key="RiderGenerateDialog/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633068932606" />
+    <state x="2350" y="-1" width="672" height="678" key="search.everywhere.popup" timestamp="1633068133081">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state x="2350" y="-1" width="672" height="678" key="search.everywhere.popup/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633068133081" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs</url>
-          <line>33</line>
-          <properties documentPath="D:\geekbrains.ru\Projects\Unity\StrategyMVP\Assets\Code\UserControlSystem\UI\Presenter\HighlighterPresenter.cs" initialLine="33">
+          <url>file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/MoveCommandCommandCreator.cs</url>
+          <line>27</line>
+          <properties documentPath="D:\geekbrains.ru\Projects\Unity\StrategyMVP\Assets\Code\UserControlSystem\UI\Model\CommandCreators\MoveCommandCommandCreator.cs" initialLine="27">
             <startOffsets>
-              <option value="742" />
+              <option value="692" />
             </startOffsets>
             <endOffsets>
-              <option value="822" />
+              <option value="729" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

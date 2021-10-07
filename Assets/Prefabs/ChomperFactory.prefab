@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 759025285624580797}
   - component: {fileID: 759025285624580739}
   - component: {fileID: 5256196524265757743}
+  - component: {fileID: 553858453452605052}
   m_Layer: 0
   m_Name: ChomperFactory
   m_TagString: Untagged
@@ -95,6 +96,7 @@ MonoBehaviour:
   _icon: {fileID: 21300000, guid: 8eb7993440f74d347b12de2787496320, type: 3}
   _maxHealth: 1000
   _health: 1000
+  _transform: {fileID: 759025285193540286}
 --- !u!114 &759025285624580739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,7 +130,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _unitsParent: {fileID: 759025285193540286}
+  _unitPlace: {fileID: 759025285193540286}
   _distance: 10
+--- !u!114 &553858453452605052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759025285193540280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 758f2a0ab1d341bdaa781564a905d8a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &759025284583352455
 MeshRenderer:
   m_ObjectHideFlags: 0

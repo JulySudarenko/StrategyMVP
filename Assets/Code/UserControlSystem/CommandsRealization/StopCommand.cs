@@ -5,9 +5,10 @@ namespace CommandsRealization
 {
     public sealed class StopCommand : IStopCommand
     {
-        public StopCommand()
+        public Vector3 HeldPosition { get; }
+        public StopCommand(Vector3 currentPosition)
         {
-            Debug.Log("Stop constructor is work");
+            HeldPosition = currentPosition;
         }
     }
 }

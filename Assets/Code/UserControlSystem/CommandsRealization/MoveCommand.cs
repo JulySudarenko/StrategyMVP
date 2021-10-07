@@ -5,9 +5,11 @@ namespace CommandsRealization
 {
     public sealed class MoveCommand : IMoveCommand
     {
-        public MoveCommand()
+        public Vector3 Target { get; }
+
+        public MoveCommand(Vector3 target)
         {
-            Debug.Log("Move constructor is work");
+            Target = target;
         }
     }
 }

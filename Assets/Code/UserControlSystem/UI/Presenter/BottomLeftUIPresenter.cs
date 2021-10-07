@@ -15,7 +15,7 @@ public sealed class BottomLeftUIPresenter : MonoBehaviour
 
     private void Start()
     {
-        _selectableValue.OnSelected += ONSelected;
+        _selectableValue.OnNewValue += ONSelected;
         ONSelected(_selectableValue.CurrentValue);
     }
 

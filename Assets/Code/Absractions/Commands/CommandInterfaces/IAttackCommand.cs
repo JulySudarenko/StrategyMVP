@@ -2,5 +2,6 @@
 {
     public interface IAttackCommand : ICommand
     {
+        public IAttacked Target { get; }
     }
 }
