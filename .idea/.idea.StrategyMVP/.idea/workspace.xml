@@ -20,17 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50351235-d248-4d75-8d5e-15b0dc8ab3da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IStopCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IStopCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/StopCommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/StopCommandExecutor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/StopCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/StopCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/StopCommandCommandCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/StopCommandCommandCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InitialAssets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperIdle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InitialAssets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperIdle.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InitialAssets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperWalkForward.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InitialAssets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperWalkForward.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Core.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Core.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Selector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Selector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomLeftUIPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomLeftUIPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/Presenter.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/Presenter.asmdef" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IMoveCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/MoveCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Attack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Move.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Patrol.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Stop.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/ProduceUnit.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/IHighlightable.cs" />
@@ -76,12 +68,9 @@
         <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/PatrolCommandExecutor.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/CommandButtonsView.cs" />
         <option value="$PROJECT_DIR$/Assets/StrategyInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomLeftUIPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/SelectableValue.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/Vector3Value.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/ISelectable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/ScriptableModelBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/AttackedValue.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Utils/AsyncExtensions.cs" />
@@ -104,7 +93,6 @@
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/AttackCommandCommandCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/StrategyInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/NewValueNotifier.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Selector.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/AwaiterBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/ScriptableObjectValueBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/UnitMovementStop.cs" />
@@ -113,6 +101,15 @@
         <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/StopCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/StopCommandCommandCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/ISelectable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/ITimeModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Selector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/ReactivePresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/TimeModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CoreInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomLeftUIPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/TopPanelPresenter.cs" />
       </list>
     </option>
   </component>
@@ -256,5 +253,24 @@
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state x="2350" y="-1" width="672" height="678" key="search.everywhere.popup/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633068133081" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/Core/CoreInstaller.cs</url>
+          <line>5</line>
+          <properties documentPath="D:\geekbrains.ru\Projects\Unity\StrategyMVP\Assets\Code\Core\CoreInstaller.cs" initialLine="5">
+            <startOffsets>
+              <option value="108" />
+            </startOffsets>
+            <endOffsets>
+              <option value="109" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
