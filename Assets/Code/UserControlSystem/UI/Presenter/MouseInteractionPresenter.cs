@@ -11,14 +11,11 @@ public class MouseInteractionPresenter : MonoBehaviour
     [SerializeField] private EventSystem _eventSystem;
 
     [SerializeField] private Vector3Value _groundClicksRMB;
-    [SerializeField] private AttackableValue _attackedRBM;
+    [SerializeField] private AttackableValue _attackClickRMB;
     [SerializeField] private Transform _groundTransform;
 
     private Plane _groundPlane;
     private Camera _camera;
-
-    private Ray _ray;
-    private RaycastHit[] _hits;
 
     [Inject]
     private void Init()
@@ -29,8 +26,8 @@ public class MouseInteractionPresenter : MonoBehaviour
         var notBlockFrames = Observable.EveryUpdate()
             .Where(f => !_eventSystem.IsPointerOverGameObject());
 
-        var leftClicks = notBlockFrames.Where(c => Input.GetMouseButtonDown(0));
-        var leftRays = leftClicks.Select(r => _camera.ScreenPointToRay(Input.mousePosition));
+        var leftClicks = notBlockFrames.Where(_ => Input.GetMouseButtonDown(0));
+        var leftRays = leftClicks.Select(_ => _camera.ScreenPointToRay(Input.mousePosition));
         var leftHits = leftRays.Select(ray => Physics.RaycastAll(ray));
         leftHits.Subscribe(hits =>
         {
@@ -40,15 +37,15 @@ public class MouseInteractionPresenter : MonoBehaviour
             }
         });
 
-        var rightClicks = notBlockFrames.Where(c => Input.GetMouseButtonDown(1));
-        var rightRays = rightClicks.Select(r => _camera.ScreenPointToRay(Input.mousePosition));
+        var rightClicks = notBlockFrames.Where(_ => Input.GetMouseButtonDown(1));
+        var rightRays = rightClicks.Select(_ => _camera.ScreenPointToRay(Input.mousePosition));
         var rightHits = rightRays.Select(ray => (ray, Physics.RaycastAll(ray)));
 
         rightHits.Subscribe((ray, hits) =>
         {
             if (WeHit<IAttackable>(hits, out var attackable))
             {
-                _attackedRBM.SetValue(attackable);
+                _attackClickRMB.SetValue(attackable);
             }
             else if (_groundPlane.Raycast(ray, out var enter))
             {
@@ -56,7 +53,7 @@ public class MouseInteractionPresenter : MonoBehaviour
             }
         });
     }
-      
+
     private bool WeHit<T>(RaycastHit[] hits, out T result) where T : class
     {
         result = default;

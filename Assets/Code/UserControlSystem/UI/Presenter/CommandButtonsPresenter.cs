@@ -1,16 +1,18 @@
-﻿using Interfaces;
+﻿using System;
+using Interfaces;
 using System.Collections.Generic;
+using UniRx;
 using UnityEngine;
 using View;
 using Zenject;
+using Component = UnityEngine.Component;
 
 public class CommandButtonsPresenter : MonoBehaviour
 {
-    [SerializeField] private SelectableValue _selectable;
     [SerializeField] private CommandButtonsView _view;
-    
     [Inject] private CommandButtonsModel _model;
-
+    [Inject] private IObservable<ISelectable> _selectableValue;
+    
     private ISelectable _currentSelectable;
 
     private void Start()
@@ -19,12 +21,11 @@ public class CommandButtonsPresenter : MonoBehaviour
         _model.OnCommandSent += _view.UnblockAllInteractions;
         _model.OnCommandCancel += _view.UnblockAllInteractions;
         _model.OnCommandAccepted += _view.BlockInteractions;
-
-        _selectable.OnNewValue += ONSelected;
-        ONSelected(_selectable.CurrentValue);
+        
+        _selectableValue.Subscribe(OnSelected);
     }
 
-    private void ONSelected(ISelectable selectable)
+    private void OnSelected(ISelectable selectable)
     {
         if (_currentSelectable == selectable)
         {
