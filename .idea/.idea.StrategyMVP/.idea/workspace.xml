@@ -22,12 +22,17 @@
     <list default="true" id="50351235-d248-4d75-8d5e-15b0dc8ab3da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Core.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Core.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Selector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Selector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Absractions/Abstractions.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Absractions/Abstractions.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UnitMovementStop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/UnitMovementStop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/StrategyInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StrategyInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/AttackableValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/AttackableValue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/SelectableValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/SelectableValue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/Vector3Value.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/Vector3Value.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomLeftUIPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomLeftUIPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/Presenter.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/Presenter.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Utils/AsyncExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Utils/AsyncExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Utils/Utils.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Utils/Utils.asmdef" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +64,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Stop.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/ProduceUnit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/IHighlightable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IPatrolCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/PatrolCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/AttackCommandExecutor.cs" />
@@ -69,18 +71,13 @@
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/CommandButtonsView.cs" />
         <option value="$PROJECT_DIR$/Assets/StrategyInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/SelectableValue.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/Vector3Value.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/ScriptableModelBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/AttackedValue.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Utils/AsyncExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/UiModelInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CancellableCommandCreatorBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/IAttacked.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IAttackCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/AttackCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/AttackableValue.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/MoveCommandCommandCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/PatrolCommandCommandCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Utils/IAwaiter.cs" />
@@ -91,14 +88,10 @@
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/CommandCreatorBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/CancellableCommandCreatorBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/AttackCommandCommandCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/StrategyInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/NewValueNotifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/AwaiterBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/ScriptableObjectValueBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/UnitMovementStop.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IStopCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/StopCommandExecutor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/StopCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/StopCommandCommandCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/ISelectable.cs" />
@@ -108,8 +101,20 @@
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/TimeModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/CoreInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomLeftUIPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/TopPanelPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/StrategyInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomLeftUIPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Utils/AsyncExtensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/UnitMovementStop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/ScriptableObjectValueBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/StatefulScriptableObjectValueBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/StatelessScriptableObjectValueBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/AttackableValue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/SelectableValue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Utils/UniRxExtensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/Vector3Value.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs" />
       </list>
     </option>
   </component>

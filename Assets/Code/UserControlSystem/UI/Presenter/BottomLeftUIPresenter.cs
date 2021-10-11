@@ -11,15 +11,17 @@ public sealed class BottomLeftUIPresenter : MonoBehaviour
     [SerializeField] private Image _sliderBackGround;
     [SerializeField] private Image _sliderFillImage;
 
-    [SerializeField] private SelectableValue _selectableValue;
+    [SerializeField] private SelectableValue _selectedValue;
+    //[Inject] private IObservable<ISelectable> _selectableValue;
 
     private void Start()
     {
-        _selectableValue.OnNewValue += ONSelected;
-        ONSelected(_selectableValue.CurrentValue);
+        _selectedValue.OnNewValue += OnSelected;
+        OnSelected(_selectedValue.CurrentValue);
+        //_selectableValue.Subscribe(OnSelected(Observable.Select(_selectableValue => (ISelectable)_selectableValue)));
     }
 
-    private void ONSelected(ISelectable selected)
+    private void OnSelected(ISelectable selected)
     {
         _selectedImage.enabled = selected != null;
         _healthSlider.gameObject.SetActive(selected != null);

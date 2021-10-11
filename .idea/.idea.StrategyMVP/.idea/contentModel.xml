@@ -29,6 +29,8 @@
             <e p="ISelectable.cs" t="Include" />
             <e p="ITimeModel.cs" t="Include" />
             <e p="ScriptableObjectValueBase.cs" t="Include" />
+            <e p="StatefulScriptableObjectValueBase.cs" t="Include" />
+            <e p="StatelessScriptableObjectValueBase.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
             <e p="Attacked.cs" t="Include" />
@@ -97,6 +99,7 @@
             <e p="IAwaitable.cs" t="Include" />
             <e p="IAwaiter.cs" t="Include" />
             <e p="InjectAssetAtribute.cs" t="Include" />
+            <e p="UniRxExtensions.cs" t="Include" />
             <e p="Utils.asmdef" t="Include" />
           </e>
         </e>
