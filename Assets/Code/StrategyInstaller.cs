@@ -1,3 +1,4 @@
+using System;
 using Interfaces;
 using UnityEngine;
 using Utils;
@@ -13,10 +14,9 @@ public class StrategyInstaller : ScriptableObjectInstaller<StrategyInstaller>
 
     public override void InstallBindings()
     {
-        Container.BindInstances(_legacyContext, _selectables);
-        Container.Bind<IAwaitable<IAttackable>>()
-            .FromInstance(_attackableClicksRMB);
-        Container.Bind<IAwaitable<Vector3>>()
-            .FromInstance(_groundClicksRMB);
+        Container.BindInstances(_legacyContext);
+        Container.Bind<IAwaitable<IAttackable>>().FromInstance(_attackableClicksRMB);
+        Container.Bind<IAwaitable<Vector3>>().FromInstance(_groundClicksRMB);
+        Container.Bind<IObservable<ISelectable>>().FromInstance(_selectables);
     }
 }

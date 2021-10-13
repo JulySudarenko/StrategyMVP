@@ -2,6 +2,7 @@
 using Interfaces;
 using UnityEngine;
 using UnityEngine.AI;
+using Utils;
 
 public class MoveCommandExecutor : CommandExecutorBase<IMoveCommand>
 {

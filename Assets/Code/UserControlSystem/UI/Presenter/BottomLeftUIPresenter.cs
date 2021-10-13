@@ -1,7 +1,10 @@
-﻿using Interfaces;
+﻿using System;
+using Interfaces;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UniRx;
+using Zenject;
 
 public sealed class BottomLeftUIPresenter : MonoBehaviour
 {
@@ -11,15 +14,14 @@ public sealed class BottomLeftUIPresenter : MonoBehaviour
     [SerializeField] private Image _sliderBackGround;
     [SerializeField] private Image _sliderFillImage;
 
-    [SerializeField] private SelectableValue _selectableValue;
+    [Inject] private IObservable<ISelectable> _selectableValue;
 
     private void Start()
     {
-        _selectableValue.OnNewValue += ONSelected;
-        ONSelected(_selectableValue.CurrentValue);
+        _selectableValue.Subscribe(OnSelected);
     }
 
-    private void ONSelected(ISelectable selected)
+    private void OnSelected(ISelectable selected)
     {
         _selectedImage.enabled = selected != null;
         _healthSlider.gameObject.SetActive(selected != null);

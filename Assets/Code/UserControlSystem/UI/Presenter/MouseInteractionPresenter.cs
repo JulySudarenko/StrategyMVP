@@ -1,7 +1,9 @@
 ﻿using System.Linq;
 using Interfaces;
+using UniRx;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using Zenject;
 
 public class MouseInteractionPresenter : MonoBehaviour
 {
@@ -9,61 +11,57 @@ public class MouseInteractionPresenter : MonoBehaviour
     [SerializeField] private EventSystem _eventSystem;
 
     [SerializeField] private Vector3Value _groundClicksRMB;
-    [SerializeField] private AttackableValue _attackedRBM;
+    [SerializeField] private AttackableValue _attackClickRMB;
     [SerializeField] private Transform _groundTransform;
 
-    private RaycastHit[] _hits;
     private Plane _groundPlane;
     private Camera _camera;
-    private Ray _ray;
 
-    void Start()
+    [Inject]
+    private void Init()
     {
         _camera = Camera.main;
         _groundPlane = new Plane(_groundTransform.up, 0);
-    }
 
-    void Update()
-    {
-        if (!Input.GetMouseButtonUp(0) && !Input.GetMouseButton(1))
-        {
-            return;
-        }
+        var notBlockFrames = Observable.EveryUpdate()
+            .Where(f => !_eventSystem.IsPointerOverGameObject());
 
-        if (_eventSystem.IsPointerOverGameObject())
+        var leftClicks = notBlockFrames.Where(_ => Input.GetMouseButtonDown(0));
+        var leftRays = leftClicks.Select(_ => _camera.ScreenPointToRay(Input.mousePosition));
+        var leftHits = leftRays.Select(ray => Physics.RaycastAll(ray));
+        leftHits.Subscribe(hits =>
         {
-            return;
-        }
-
-        _ray = _camera.ScreenPointToRay(Input.mousePosition);
-        _hits = Physics.RaycastAll(_ray);
-        if (Input.GetMouseButtonUp(0))
-        {
-            if (WeHit<ISelectable>(_hits, out var selectable))
+            if (WeHit<ISelectable>(hits, out var selectable))
             {
                 _selectedObject.SetValue(selectable);
             }
-        }
-        else
+        });
+
+        var rightClicks = notBlockFrames.Where(_ => Input.GetMouseButtonDown(1));
+        var rightRays = rightClicks.Select(_ => _camera.ScreenPointToRay(Input.mousePosition));
+        var rightHits = rightRays.Select(ray => (ray, Physics.RaycastAll(ray)));
+
+        rightHits.Subscribe((ray, hits) =>
         {
-            if (WeHit<IAttackable>(_hits, out var attackable))
+            if (WeHit<IAttackable>(hits, out var attackable))
             {
-                _attackedRBM.SetValue(attackable);
+                _attackClickRMB.SetValue(attackable);
             }
-            else if (_groundPlane.Raycast(_ray, out var enter))
+            else if (_groundPlane.Raycast(ray, out var enter))
             {
-                _groundClicksRMB.SetValue(_ray.origin + _ray.direction * enter);
+                _groundClicksRMB.SetValue(ray.origin + ray.direction * enter);
             }
-        }
+        });
     }
-    
+
     private bool WeHit<T>(RaycastHit[] hits, out T result) where T : class
     {
         result = default;
         if (hits.Length == 0)
         {
             return false;
-        }    
+        }
+
         result = hits
             .Select(hit => hit.collider.GetComponentInParent<T>())
             .FirstOrDefault(c => c != null);
