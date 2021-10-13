@@ -19,6 +19,7 @@
                 <e p="IPatrolCommand.cs" t="Include" />
                 <e p="IProduceUnitCommand.cs" t="Include" />
                 <e p="IStopCommand.cs" t="Include" />
+                <e p="IUnitProductionTask.cs" t="Include" />
               </e>
               <e p="ICommand.cs" t="Include" />
               <e p="ICommandExecutor.cs" t="Include" />
@@ -26,8 +27,10 @@
             <e p="IAttackable.cs" t="Include" />
             <e p="IHealthHolder.cs" t="Include" />
             <e p="IHighlightable.cs" t="Include" />
+            <e p="IIconHolder.cs" t="Include" />
             <e p="ISelectable.cs" t="Include" />
             <e p="ITimeModel.cs" t="Include" />
+            <e p="IUnitProducer.cs" t="Include" />
             <e p="ScriptableObjectValueBase.cs" t="Include" />
             <e p="StatefulScriptableObjectValueBase.cs" t="Include" />
             <e p="StatelessScriptableObjectValueBase.cs" t="Include" />
@@ -47,6 +50,7 @@
             <e p="Selector.cs" t="Include" />
             <e p="TimeModel.cs" t="Include" />
             <e p="UnitMovementStop.cs" t="Include" />
+            <e p="UnitProductionTask.cs" t="Include" />
           </e>
           <e p="StrategyInstaller.cs" t="Include" />
           <e p="UserControlSystem" t="Include">
