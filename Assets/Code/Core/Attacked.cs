@@ -1,7 +1,8 @@
 ﻿using Interfaces;
 using UnityEngine;
 
-public class Attacked : MonoBehaviour, IAttacked
+public class Attacked : MonoBehaviour, IAttackable
 {
-    
+    public float Health { get; }
+    public float MaxHealth { get; }
 }

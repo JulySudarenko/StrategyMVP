@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Interfaces;
+using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,13 +34,13 @@ namespace View
         public void BlockInteractions(ICommandExecutor ce)
         {
             UnblockAllInteractions();
-            getButtonGameObjectByType(ce.GetType())
+            GetButtonGameObjectByType(ce.GetType())
                 .GetComponent<Selectable>().interactable = false;
         }
 
-        public void UnblockAllInteractions() => setInteractible(true);
+        public void UnblockAllInteractions() => SetInteractible(true);
 
-        private void setInteractible(bool value)
+        private void SetInteractible(bool value)
         {
             _attackButton.GetComponent<Selectable>().interactable = value;
             _moveButton.GetComponent<Selectable>().interactable = value;
@@ -52,14 +53,14 @@ namespace View
         {
             foreach (var currentExecutor in commandExecutors)
             {
-                var buttonGameObject = getButtonGameObjectByType(currentExecutor.GetType());
+                var buttonGameObject = GetButtonGameObjectByType(currentExecutor.GetType());
                 buttonGameObject.SetActive(true);
                 var button = buttonGameObject.GetComponent<Button>();
-                button.onClick.AddListener(() => OnClick?.Invoke(currentExecutor));
+                button.OnClickAsObservable().Subscribe(_ => OnClick?.Invoke(currentExecutor));
             }
         }
 
-        private GameObject getButtonGameObjectByType(Type executorInstanceType)
+        private GameObject GetButtonGameObjectByType(Type executorInstanceType)
         {
             return _buttonsByExecutorType
                 .First(type => type.Key.IsAssignableFrom(executorInstanceType))
@@ -70,8 +71,6 @@ namespace View
         {
             foreach (var kvp in _buttonsByExecutorType)
             {
-                kvp.Value
-                    .GetComponent<Button>().onClick.RemoveAllListeners();
                 kvp.Value.SetActive(false);
             }
         }

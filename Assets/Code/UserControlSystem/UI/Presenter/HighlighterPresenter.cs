@@ -1,20 +1,22 @@
-﻿using Interfaces;
+﻿using System;
+using Interfaces;
+using UniRx;
 using UnityEngine;
+using Zenject;
 
 public class HighlighterPresenter : MonoBehaviour
 {
-    [SerializeField] private SelectableValue _selectableValue;
+    [Inject] private IObservable<ISelectable> _selectableValue;
 
     private IHighlightable[] _highlighters;
     private ISelectable _selectedActual;
 
     private void Start()
     {
-        _selectableValue.OnNewValue += ONSelected;
-        ONSelected(_selectableValue.CurrentValue);
+        _selectableValue.Subscribe(OnSelected);
     }
 
-    private void ONSelected(ISelectable selected)
+    private void OnSelected(ISelectable selected)
     {
         if (_selectedActual == selected)
         {

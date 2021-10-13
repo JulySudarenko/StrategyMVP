@@ -20,19 +20,19 @@ public class CommandButtonsModel
     {
         if (_commandIsPending)
         {
-            processOnCancel();
+            ProcessOnCancel();
         }
         _commandIsPending = true;
         OnCommandAccepted?.Invoke(commandExecutor);
 
-        _unitProducer.ProcessCommandExecutor(commandExecutor, command => executeCommandWrapper(commandExecutor, command));
-        _attacker.ProcessCommandExecutor(commandExecutor, command => executeCommandWrapper(commandExecutor, command));
-        _stopper.ProcessCommandExecutor(commandExecutor, command => executeCommandWrapper(commandExecutor, command));
-        _mover.ProcessCommandExecutor(commandExecutor, command => executeCommandWrapper(commandExecutor, command));
-        _patroller.ProcessCommandExecutor(commandExecutor, command => executeCommandWrapper(commandExecutor, command));
+        _unitProducer.ProcessCommandExecutor(commandExecutor, command => ExecuteCommandWrapper(commandExecutor, command));
+        _attacker.ProcessCommandExecutor(commandExecutor, command => ExecuteCommandWrapper(commandExecutor, command));
+        _stopper.ProcessCommandExecutor(commandExecutor, command => ExecuteCommandWrapper(commandExecutor, command));
+        _mover.ProcessCommandExecutor(commandExecutor, command => ExecuteCommandWrapper(commandExecutor, command));
+        _patroller.ProcessCommandExecutor(commandExecutor, command => ExecuteCommandWrapper(commandExecutor, command));
     }
 
-    public void executeCommandWrapper(ICommandExecutor commandExecutor, object command)
+    public void ExecuteCommandWrapper(ICommandExecutor commandExecutor, object command)
     {
         commandExecutor.ExecuteCommand(command);
         _commandIsPending = false;
@@ -42,10 +42,10 @@ public class CommandButtonsModel
     public void OnSelectionChanged()
     {
         _commandIsPending = false;
-        processOnCancel();
+        ProcessOnCancel();
     }
 
-    private void processOnCancel()
+    private void ProcessOnCancel()
     {
         _unitProducer.ProcessCancel();
         _attacker.ProcessCancel();

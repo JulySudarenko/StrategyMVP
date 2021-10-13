@@ -16,6 +16,10 @@ GameObject:
   - component: {fileID: 6349435023647657969}
   - component: {fileID: 2605902940219317547}
   - component: {fileID: 5464745828109353662}
+  - component: {fileID: -3686379399976677629}
+  - component: {fileID: 6977212086300151071}
+  - component: {fileID: 6330041628403022083}
+  - component: {fileID: -3249479999897410528}
   m_Layer: 0
   m_Name: Chomper
   m_TagString: Untagged
@@ -105,6 +109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209a50f81357416f8015e4659a303757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stop: {fileID: 6330041628403022083}
+  _animator: {fileID: 6977212086300151071}
+  _stopCommandExecutor: {fileID: 1134981143997636044}
 --- !u!114 &2605902940219317547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +140,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 758f2a0ab1d341bdaa781564a905d8a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!195 &-3686379399976677629
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184402856757105351}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!95 &6977212086300151071
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184402856757105351}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 2732fe64dd2799f439fb845921df626b, type: 3}
+  m_Controller: {fileID: 9100000, guid: 7cdf164a13c1cfb4681cd03c4c975128, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6330041628403022083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184402856757105351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ef8d5fd68d45a6a98406ec83042da0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _agent: {fileID: -3686379399976677629}
+--- !u!54 &-3249479999897410528
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184402856757105351}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4897105491518147070
 GameObject:
   m_ObjectHideFlags: 0

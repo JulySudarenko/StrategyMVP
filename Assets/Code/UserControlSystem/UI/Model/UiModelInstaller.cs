@@ -7,14 +7,14 @@ public class UiModelInstaller : MonoInstaller
 {
     [SerializeField] private AssetsContext _legacyContext;
     [SerializeField] private Vector3Value _goundClicksRMB;
-    [SerializeField] private AttackedValue _attackedRMB;
+    [SerializeField] private AttackableValue _attackedRMB;
     [SerializeField] private SelectableValue _selectableValue;
     
     public override void InstallBindings()
     {
         Container.Bind<AssetsContext>().FromInstance(_legacyContext);
         Container.Bind<Vector3Value>().FromInstance(_goundClicksRMB);
-        Container.Bind<AttackedValue>().FromInstance(_attackedRMB);
+        Container.Bind<AttackableValue>().FromInstance(_attackedRMB);
         Container.Bind<SelectableValue>().FromInstance(_selectableValue);
 
         Container.Bind<CommandCreatorBase<IProduceUnitCommand>>()

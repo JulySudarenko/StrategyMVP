@@ -1,10 +1,6 @@
-﻿
-using UnityEngine;
-
-namespace Interfaces
+﻿namespace Interfaces
 {
     public interface IStopCommand : ICommand
     {
-        public Vector3 HeldPosition { get; }
     }
 }

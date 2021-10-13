@@ -1,10 +1,11 @@
-﻿using Interfaces;
-using UnityEngine;
+﻿using System.Threading;
+using Interfaces;
 
 public class StopCommandExecutor : CommandExecutorBase<IStopCommand>
 {
+    public CancellationTokenSource CancellationTokenSource { get; set; }
     public override void ExecuteSpecificCommand(IStopCommand command)
     {
-        Debug.Log($"Command stop in point {command.HeldPosition}");
+        CancellationTokenSource?.Cancel();
     }
 }
