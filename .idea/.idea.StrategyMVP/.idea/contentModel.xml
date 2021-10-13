@@ -19,7 +19,6 @@
                 <e p="IPatrolCommand.cs" t="Include" />
                 <e p="IProduceUnitCommand.cs" t="Include" />
                 <e p="IStopCommand.cs" t="Include" />
-                <e p="IUnitProductionTask.cs" t="Include" />
               </e>
               <e p="ICommand.cs" t="Include" />
               <e p="ICommandExecutor.cs" t="Include" />
@@ -31,6 +30,7 @@
             <e p="ISelectable.cs" t="Include" />
             <e p="ITimeModel.cs" t="Include" />
             <e p="IUnitProducer.cs" t="Include" />
+            <e p="IUnitProductionTask.cs" t="Include" />
             <e p="ScriptableObjectValueBase.cs" t="Include" />
             <e p="StatefulScriptableObjectValueBase.cs" t="Include" />
             <e p="StatelessScriptableObjectValueBase.cs" t="Include" />
@@ -66,6 +66,7 @@
             <e p="UI" t="Include">
               <e p="Model" t="Include">
                 <e p="AttackableValue.cs" t="Include" />
+                <e p="BottomCenterModel.cs" t="Include" />
                 <e p="CommandCreators" t="Include">
                   <e p="AttackCommandCommandCreator.cs" t="Include" />
                   <e p="CancellableCommandCreatorBase.cs" t="Include" />
@@ -82,6 +83,7 @@
                 <e p="Vector3Value.cs" t="Include" />
               </e>
               <e p="Presenter" t="Include">
+                <e p="BottomCenterPresenter.cs" t="Include" />
                 <e p="BottomLeftUIPresenter.cs" t="Include" />
                 <e p="CommandButtonsPresenter.cs" t="Include" />
                 <e p="HighlighterPresenter.cs" t="Include" />
@@ -91,7 +93,9 @@
                 <e p="TopPanelPresenter.cs" t="Include" />
               </e>
               <e p="View" t="Include">
+                <e p="BottomCenterView.cs" t="Include" />
                 <e p="CommandButtonsView.cs" t="Include" />
+                <e p="UiViewInstaller.cs" t="Include" />
                 <e p="View.asmdef" t="Include" />
               </e>
             </e>

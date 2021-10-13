@@ -39,12 +39,17 @@ public class ProduceUnitCommandExecutor : CommandExecutorBase<IProduceUnitComman
         {
             _queue[i] = _queue[i + 1];
         }
+
         _queue.RemoveAt(length);
     }
 
     public override void ExecuteSpecificCommand(IProduceUnitCommand command)
     {
-        _queue.Add(new UnitProductionTask(command.ProductionTime, command.Icon, command.UnitPrefab, command.UnitName));
+        if (_queue.Count < _maximumUnitsInQueue)
+        {
+            _queue.Add(new UnitProductionTask(command.ProductionTime, command.Icon, command.UnitPrefab,
+                command.UnitName));
+        }
     }
 
     private void CreateNewUnit(UnitProductionTask innerTask)

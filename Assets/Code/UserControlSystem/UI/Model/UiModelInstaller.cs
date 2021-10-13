@@ -16,7 +16,7 @@ public class UiModelInstaller : MonoInstaller
         Container.Bind<Vector3Value>().FromInstance(_goundClicksRMB);
         Container.Bind<AttackableValue>().FromInstance(_attackedRMB);
         Container.Bind<SelectableValue>().FromInstance(_selectableValue);
-
+        
         Container.Bind<CommandCreatorBase<IProduceUnitCommand>>()
             .To<ProduceUnitCommandCommandCreator>().AsTransient();
         Container.Bind<CommandCreatorBase<IAttackCommand>>()
@@ -31,5 +31,6 @@ public class UiModelInstaller : MonoInstaller
         Container.Bind<string>().WithId("Chomper").FromInstance("Chomper");
 
         Container.Bind<CommandButtonsModel>().AsTransient();
+        Container.Bind<BottomCenterModel>().AsTransient();
     }
 }
