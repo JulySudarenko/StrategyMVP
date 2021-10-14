@@ -31,6 +31,7 @@
             <e p="IIconHolder.cs" t="Include" />
             <e p="ISelectable.cs" t="Include" />
             <e p="ITimeModel.cs" t="Include" />
+            <e p="IUnit.cs" t="Include" />
             <e p="IUnitProducer.cs" t="Include" />
             <e p="IUnitProductionTask.cs" t="Include" />
             <e p="ScriptableObjectValueBase.cs" t="Include" />
@@ -41,6 +42,7 @@
             <e p="Attacked.cs" t="Include" />
             <e p="BuildingSelector.cs" t="Include" />
             <e p="ChomperCommandsQueue.cs" t="Include" />
+            <e p="CollisionDetector.cs" t="Include" />
             <e p="CommandExecutor" t="Include">
               <e p="AttackCommandExecutor.cs" t="Include" />
               <e p="CommandExecutorsInstaller.cs" t="Include" />
@@ -57,6 +59,7 @@
             <e p="MoveCommand.cs" t="Include" />
             <e p="StopCommand.cs" t="Include" />
             <e p="TimeModel.cs" t="Include" />
+            <e p="Unit.cs" t="Include" />
             <e p="UnitMovementStop.cs" t="Include" />
             <e p="UnitProductionTask.cs" t="Include" />
             <e p="UnitSelector.cs" t="Include" />
