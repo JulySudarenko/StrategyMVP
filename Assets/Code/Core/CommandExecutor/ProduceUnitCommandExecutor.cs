@@ -55,11 +55,17 @@ public class ProduceUnitCommandExecutor : CommandExecutorBase<IProduceUnitComman
 
     private void CreateNewUnit(UnitProductionTask innerTask)
     {
-        _diContainer.InstantiatePrefab(innerTask.UnitPrefab,
-            CreateRandomPlaceForNewUnit(_unitsParent.position), Quaternion.identity, _unitPlace);
+        // _diContainer.InstantiatePrefab(innerTask.UnitPrefab,
+        //     CreateRandomPlaceForNewUnit(_unitsParent.position), Quaternion.identity, _unitPlace);
         // Instantiate(innerTask.UnitPrefab,
         //     CreateRandomPlaceForNewUnit(_unitsParent.position),
         //     Quaternion.identity, _unitPlace);
+        var instance = _diContainer.InstantiatePrefab(
+            innerTask.UnitPrefab, transform.position, Quaternion.identity, _unitPlace);
+        instance.gameObject.SetActive(true);
+        var queue = instance.GetComponent<ICommandsQueue>();
+        var mainBuilding = GetComponent<BuildingSelector>();
+        queue.EnqueueCommand(new MoveCommand(mainBuilding.RallyPoint));
     }
 
     private Vector3 CreateRandomPlaceForNewUnit(Vector3 parentPlace)

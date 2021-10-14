@@ -9,14 +9,14 @@ public class UiModelInstaller : MonoInstaller
     [SerializeField] private Vector3Value _goundClicksRMB;
     [SerializeField] private AttackableValue _attackedRMB;
     [SerializeField] private SelectableValue _selectableValue;
-    
+
     public override void InstallBindings()
     {
         Container.Bind<AssetsContext>().FromInstance(_legacyContext);
         Container.Bind<Vector3Value>().FromInstance(_goundClicksRMB);
         Container.Bind<AttackableValue>().FromInstance(_attackedRMB);
         Container.Bind<SelectableValue>().FromInstance(_selectableValue);
-        
+
         Container.Bind<CommandCreatorBase<IProduceUnitCommand>>()
             .To<ProduceUnitCommandCommandCreator>().AsTransient();
         Container.Bind<CommandCreatorBase<IAttackCommand>>()
@@ -27,9 +27,11 @@ public class UiModelInstaller : MonoInstaller
             .To<PatrolCommandCommandCreator>().AsTransient();
         Container.Bind<CommandCreatorBase<IStopCommand>>()
             .To<StopCommandCommandCreator>().AsTransient();
+        Container.Bind<CommandCreatorBase<ISetRallyPointCommand>>()
+            .To<SetRallyPointCommandCreator>().AsTransient();
+
         Container.Bind<float>().WithId("Chomper").FromInstance(5f);
         Container.Bind<string>().WithId("Chomper").FromInstance("Chomper");
-        //Container.Bind<GameObject>().WithId("Chomper").FromInstance("Chomper");
 
         Container.Bind<CommandButtonsModel>().AsTransient();
         Container.Bind<BottomCenterModel>().AsTransient();
