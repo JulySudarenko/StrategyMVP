@@ -1,6 +1,8 @@
-﻿using Interfaces;
+﻿using System.Threading.Tasks;
+using Interfaces;
 using UniRx;
 using UnityEngine;
+using Zenject;
 
 public class ProduceUnitCommandExecutor : CommandExecutorBase<IProduceUnitCommand>, IUnitProducer
 {
@@ -12,6 +14,7 @@ public class ProduceUnitCommandExecutor : CommandExecutorBase<IProduceUnitComman
     [SerializeField] private float _distance = 10.0f;
 
     private ReactiveCollection<IUnitProductionTask> _queue = new ReactiveCollection<IUnitProductionTask>();
+    [Inject] private DiContainer _diContainer;
 
     private void Update()
     {
@@ -33,17 +36,15 @@ public class ProduceUnitCommandExecutor : CommandExecutorBase<IProduceUnitComman
 
     private void removeTaskAtIndex(int index)
     {
-        int i;
-        int length = _queue.Count - 1;
-        for (i = index; i < length; i++)
+        for (int i = index; i < _queue.Count - 1; i++)
         {
             _queue[i] = _queue[i + 1];
         }
 
-        _queue.RemoveAt(length);
+        _queue.RemoveAt(_queue.Count - 1);
     }
 
-    public override void ExecuteSpecificCommand(IProduceUnitCommand command)
+    public override async Task ExecuteSpecificCommand(IProduceUnitCommand command)
     {
         if (_queue.Count < _maximumUnitsInQueue)
         {
@@ -54,9 +55,11 @@ public class ProduceUnitCommandExecutor : CommandExecutorBase<IProduceUnitComman
 
     private void CreateNewUnit(UnitProductionTask innerTask)
     {
-        Instantiate(innerTask.UnitPrefab,
-            CreateRandomPlaceForNewUnit(_unitsParent.position),
-            Quaternion.identity, _unitPlace);
+        _diContainer.InstantiatePrefab(innerTask.UnitPrefab,
+            CreateRandomPlaceForNewUnit(_unitsParent.position), Quaternion.identity, _unitPlace);
+        // Instantiate(innerTask.UnitPrefab,
+        //     CreateRandomPlaceForNewUnit(_unitsParent.position),
+        //     Quaternion.identity, _unitPlace);
     }
 
     private Vector3 CreateRandomPlaceForNewUnit(Vector3 parentPlace)

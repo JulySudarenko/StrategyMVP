@@ -19,8 +19,6 @@ namespace View
         [SerializeField] private GameObject[] _imageHolders;
         [SerializeField] private Button[] _buttons;
 
-        [SerializeField] private Image _imgTest;
-
         private Subject<int> _cancelButtonClicks = new Subject<int>();
 
         private IDisposable _unitProductionTaskCt;
@@ -69,7 +67,6 @@ namespace View
             {
                 _imageHolders[index].SetActive(true);
                 _images[index].sprite = task.Icon;
-                _imgTest.sprite = task.Icon;
 
                 if (index == 0)
                 {

@@ -57,6 +57,8 @@ GameObject:
   - component: {fileID: 759025285624580739}
   - component: {fileID: 5256196524265757743}
   - component: {fileID: 553858453452605052}
+  - component: {fileID: 8799223535073328598}
+  - component: {fileID: 4195477175218914364}
   m_Layer: 0
   m_Name: ChomperFactory
   m_TagString: Untagged
@@ -143,6 +145,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 758f2a0ab1d341bdaa781564a905d8a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8799223535073328598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759025285193540280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f0aa66853d4d6989c0c58fc471b12e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4195477175218914364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759025285193540280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60328b6528ad449c97837fbebc1257ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!23 &759025284583352455
