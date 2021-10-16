@@ -1,7 +1,7 @@
 ﻿using Interfaces;
 using UnityEngine;
 
-public class BuildingSelector : MonoBehaviour, ISelectable
+public class MainBuilding : MonoBehaviour, ISelectable, IAttackable
 {
     [SerializeField] private Sprite _icon;
     [SerializeField] private float _maxHealth;
@@ -13,4 +13,18 @@ public class BuildingSelector : MonoBehaviour, ISelectable
     public float MaxHealth => _maxHealth;
     public Sprite Icon => _icon;
     public Transform PositionPoint => _transform;
+
+    public void ReceiveDamage(int amount)
+    {
+        if (_health <= 0)
+        {
+            return;
+        }
+
+        _health -= amount;
+        if (_health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }

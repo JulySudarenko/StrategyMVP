@@ -56,9 +56,10 @@ public class ProduceUnitCommandExecutor : CommandExecutorBase<IProduceUnitComman
     private void CreateNewUnit(UnitProductionTask innerTask)
     {
         var instance = _diContainer.InstantiatePrefab(
-            innerTask.UnitPrefab, transform.position, Quaternion.identity, _unitPlace);
+            innerTask.UnitPrefab,CreateRandomPlaceForNewUnit(_unitsParent.position), 
+            Quaternion.identity, _unitPlace);
         var queue = instance.GetComponent<ICommandsQueue>();
-        var mainBuilding = GetComponent<BuildingSelector>();
+        var mainBuilding = GetComponent<MainBuilding>();
         queue.EnqueueCommand(new MoveCommand(mainBuilding.RallyPoint));
         var factionMember = instance.GetComponent<FractionMember>();
         factionMember.SetFaction(GetComponent<FractionMember>().FactionId);

@@ -5,6 +5,6 @@ public class SetRallyPointCommandExecutor : CommandExecutorBase<ISetRallyPointCo
 {
     public override async Task ExecuteSpecificCommand(ISetRallyPointCommand command)
     {
-        GetComponent<BuildingSelector>().RallyPoint = command.RallyPoint;
+        GetComponent<MainBuilding>().RallyPoint = command.RallyPoint;
     }
 }
