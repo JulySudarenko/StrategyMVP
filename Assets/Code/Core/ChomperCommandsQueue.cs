@@ -5,10 +5,10 @@ using Zenject;
 
 public class ChomperCommandsQueue : MonoBehaviour, ICommandsQueue
 {
-    [Inject] CommandExecutorBase<IMoveCommand> _moveCommandExecutor;
-    [Inject] CommandExecutorBase<IPatrolCommand> _patrolCommandExecutor;
-    [Inject] CommandExecutorBase<IAttackCommand> _attackCommandExecutor;
-    [Inject] CommandExecutorBase<IStopCommand> _stopCommandExecutor;
+    [Inject] private CommandExecutorBase<IMoveCommand> _moveCommandExecutor;
+    [Inject] private CommandExecutorBase<IPatrolCommand> _patrolCommandExecutor;
+    [Inject] private CommandExecutorBase<IAttackCommand> _attackCommandExecutor;
+    [Inject] private CommandExecutorBase<IStopCommand> _stopCommandExecutor;
 
     private ReactiveCollection<ICommand> _innerCollection = new ReactiveCollection<ICommand>();
 
