@@ -22,30 +22,12 @@
     <list default="true" id="50351235-d248-4d75-8d5e-15b0dc8ab3da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimatorControllers/ChomperAnimatorController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimatorControllers/ChomperAnimatorController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Absractions/IAttackable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Absractions/IAttackable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Attacked.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Attacked.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/BuildingSelector.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/BuildingSelector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/ChomperCommandsQueue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/ChomperCommandsQueue.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/AttackCommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/AttackCommandExecutor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/SetRallyPointCommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/SetRallyPointCommandExecutor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/MainBuildingCommandQueue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/MainBuildingCommandQueue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Unit.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Unit.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UnitMovementStop.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UnitMovementStop.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UnitProductionTask.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UnitProductionTask.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UnitSelector.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/UnitSelector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InitialAssets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperAttack.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InitialAssets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperAttack.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InitialAssets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperHit3.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InitialAssets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperHit3.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuilding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuilding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Unit/MainUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Unit/MainUnit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ChomperFactory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ChomperFactory.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,9 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomCenterPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/BottomCenterModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/UnitProductionTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/ProduceUnitCommandCommandCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/ICommandExecutor.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" />
@@ -100,7 +79,6 @@
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/ISetRallyPointCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/StopCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/SetRallyPointCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/AttackCommandExecutor.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Selector.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/SetRallyPointCommandExecutor.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/StopCommandCommandCreator.cs" />
@@ -118,18 +96,22 @@
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/UiModelInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/ChomperCommandsQueue.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/IIconHolder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/IFactionMember.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/FactionMember.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/CoreInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/IAttackable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/BuildingSelector.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuilding.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Unit/UnitSelector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Unit/MainUnit.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Unit/Unit.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Attacked.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/IFractionMember.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuilding.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Unit/MainUnit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/AttackCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" />
       </list>
     </option>
   </component>
@@ -302,6 +284,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/AttackCommandExecutor.cs</url>
+          <line>125</line>
+          <properties documentPath="D:\geekbrains.ru\Projects\Unity\StrategyMVP\Assets\Code\Core\CommandExecutor\AttackCommandExecutor.cs" initialLine="133">
+            <startOffsets>
+              <option value="3861" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3906" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

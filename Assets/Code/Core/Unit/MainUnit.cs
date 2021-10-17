@@ -1,7 +1,7 @@
 ﻿using Interfaces;
 using UnityEngine;
 
-public class MainUnit : MonoBehaviour, ISelectable, IAttackable, IUnit
+public class MainUnit : MonoBehaviour, ISelectable, IAttackable, IUnit, IDamageDealer
 {
     [SerializeField] private Sprite _icon;
     [SerializeField] private float _maxHealth;
@@ -9,7 +9,9 @@ public class MainUnit : MonoBehaviour, ISelectable, IAttackable, IUnit
     [SerializeField] private Transform _transform;
     [SerializeField] private Animator _animator;
     [SerializeField] private StopCommandExecutor _stopCommand;
-
+    [SerializeField] private int _damage = 25;
+    
+    public int Damage => _damage;
     public float Health => _health;
     public float MaxHealth => _maxHealth;
     public Sprite Icon => _icon;

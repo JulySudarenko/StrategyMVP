@@ -26,6 +26,7 @@
             </e>
             <e p="IAttackable.cs" t="Include" />
             <e p="ICommandsQueue.cs" t="Include" />
+            <e p="IDamageDealer.cs" t="Include" />
             <e p="IFractionMember.cs" t="Include" />
             <e p="IHealthHolder.cs" t="Include" />
             <e p="IHighlightable.cs" t="Include" />
@@ -63,6 +64,7 @@
             <e p="TimeModel.cs" t="Include" />
             <e p="Unit" t="Include">
               <e p="ChomperCommandsQueue.cs" t="Include" />
+              <e p="ChomperInstaller.cs" t="Include" />
               <e p="MainUnit.cs" t="Include" />
               <e p="UnitMovementStop.cs" t="Include" />
               <e p="UnitProductionTask.cs" t="Include" />

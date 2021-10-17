@@ -13,6 +13,11 @@ public class Highlighter : MonoBehaviour, IHighlightable
 
     public void HighlightSelectedObject(bool isSelected)
     {
+        if (this == null)
+        {
+            return;
+        }
+        
         if (_isSelectedActual == isSelected)
         {
             return;

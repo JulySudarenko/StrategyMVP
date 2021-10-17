@@ -7,6 +7,7 @@ public class MainBuilding : MonoBehaviour, ISelectable, IAttackable
     [SerializeField] private float _maxHealth;
     [SerializeField] private float _health;
     [SerializeField] private Transform _transform;
+
     public Vector3 RallyPoint { get; set; }
 
     public float Health => _health;

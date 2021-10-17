@@ -56,7 +56,7 @@ public class ProduceUnitCommandExecutor : CommandExecutorBase<IProduceUnitComman
     private void CreateNewUnit(UnitProductionTask innerTask)
     {
         var instance = _diContainer.InstantiatePrefab(
-            innerTask.UnitPrefab,CreateRandomPlaceForNewUnit(_unitsParent.position), 
+            innerTask.UnitPrefab, transform.position,
             Quaternion.identity, _unitPlace);
         var queue = instance.GetComponent<ICommandsQueue>();
         var mainBuilding = GetComponent<MainBuilding>();
