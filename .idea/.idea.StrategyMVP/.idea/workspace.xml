@@ -22,13 +22,13 @@
     <list default="true" id="50351235-d248-4d75-8d5e-15b0dc8ab3da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/AttackCommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/AttackCommandExecutor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Absractions/IHealthHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Absractions/IHealthHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/PatrolCommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/PatrolCommandExecutor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuilding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuilding.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Unit/MainUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Unit/MainUnit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CoreInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CoreInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/FractionMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/FractionMember.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MenuPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MenuPresenter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/ProduceUnitCommandCommandCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/ICommandExecutor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/StopCommandExecutor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/CommandCreatorBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/IHighlightable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/TimeModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandExecutorBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/BottomCenterView.cs" />
@@ -74,7 +68,6 @@
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/CommandExecutorsInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/StrategyInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/PatrolCommandExecutor.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IAttackCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/ISetRallyPointCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/StopCommand.cs" />
@@ -98,7 +91,6 @@
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/IIconHolder.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/IFactionMember.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/FactionMember.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CoreInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/IAttackable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/BuildingSelector.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuilding.cs" />
@@ -110,8 +102,16 @@
         <option value="$PROJECT_DIR$/Assets/Code/Core/Unit/MainUnit.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/AttackCommandExecutor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/PatrolCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/IGameStatus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/FractionMember.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/IHealthHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/GameStatus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CoreInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MenuPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/GameOverScreenPresenter.cs" />
       </list>
     </option>
   </component>

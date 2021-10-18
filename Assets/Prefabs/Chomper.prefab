@@ -104,6 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e00a9446f44852a3a932ffdeb4d361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stop: {fileID: 6330041628403022083}
+  _animator: {fileID: 6977212086300151071}
+  _stopCommandExecutor: {fileID: 1134981143997636044}
 --- !u!114 &6349435023647657969
 MonoBehaviour:
   m_ObjectHideFlags: 0
