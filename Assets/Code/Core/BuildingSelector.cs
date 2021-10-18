@@ -1,12 +1,13 @@
 ﻿using Interfaces;
 using UnityEngine;
 
-public class Selector : MonoBehaviour, ISelectable
+public class BuildingSelector : MonoBehaviour, ISelectable
 {
     [SerializeField] private Sprite _icon;
     [SerializeField] private float _maxHealth;
     [SerializeField] private float _health;
     [SerializeField] private Transform _transform;
+    public Vector3 RallyPoint { get; set; }
 
     public float Health => _health;
     public float MaxHealth => _maxHealth;

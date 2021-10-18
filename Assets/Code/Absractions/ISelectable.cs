@@ -1,11 +1,9 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Interfaces
 {
-    public interface ISelectable : IHealthHolder
+    public interface ISelectable : IHealthHolder, IIconHolder
     {
-        Sprite Icon { get; }
         Transform PositionPoint { get; }
     }
 }

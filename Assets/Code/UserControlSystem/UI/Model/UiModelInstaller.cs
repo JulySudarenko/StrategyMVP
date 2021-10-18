@@ -9,7 +9,10 @@ public class UiModelInstaller : MonoInstaller
     [SerializeField] private Vector3Value _goundClicksRMB;
     [SerializeField] private AttackableValue _attackedRMB;
     [SerializeField] private SelectableValue _selectableValue;
-    
+
+    [SerializeField] private Sprite _chomperSprite;
+    [SerializeField] private GameObject _chomperPrefab;
+
     public override void InstallBindings()
     {
         Container.Bind<AssetsContext>().FromInstance(_legacyContext);
@@ -27,7 +30,15 @@ public class UiModelInstaller : MonoInstaller
             .To<PatrolCommandCommandCreator>().AsTransient();
         Container.Bind<CommandCreatorBase<IStopCommand>>()
             .To<StopCommandCommandCreator>().AsTransient();
+        Container.Bind<CommandCreatorBase<ISetRallyPointCommand>>()
+            .To<SetRallyPointCommandCreator>().AsTransient();
+
+        Container.Bind<float>().WithId("Chomper").FromInstance(5f);
+        Container.Bind<string>().WithId("Chomper").FromInstance("Chomper");
+        Container.Bind<Sprite>().WithId("Chomper").FromInstance(_chomperSprite);
+        Container.Bind<GameObject>().WithId("Chomper").FromInstance(_chomperPrefab);
 
         Container.Bind<CommandButtonsModel>().AsTransient();
+        Container.Bind<BottomCenterModel>().AsTransient();
     }
 }

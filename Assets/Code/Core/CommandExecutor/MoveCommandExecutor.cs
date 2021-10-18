@@ -1,4 +1,5 @@
 ﻿using System.Threading;
+using System.Threading.Tasks;
 using Interfaces;
 using UnityEngine;
 using UnityEngine.AI;
@@ -12,7 +13,7 @@ public class MoveCommandExecutor : CommandExecutorBase<IMoveCommand>
 
     private NavMeshAgent _navMeshAgent;
 
-    public override async void ExecuteSpecificCommand(IMoveCommand command)
+    public override async Task ExecuteSpecificCommand(IMoveCommand command)
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _navMeshAgent.destination = command.Target;
