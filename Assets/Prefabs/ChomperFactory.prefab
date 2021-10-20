@@ -62,6 +62,8 @@ GameObject:
   - component: {fileID: 6238007315149108182}
   - component: {fileID: 4645214248102297863}
   - component: {fileID: 7665715006596993822}
+  - component: {fileID: 955789415206869096}
+  - component: {fileID: -4294200242459591198}
   m_Layer: 0
   m_Name: ChomperFactory
   m_TagString: Untagged
@@ -202,6 +204,7 @@ MonoBehaviour:
   _scriptableObjectInstallers: []
   _monoInstallers:
   - {fileID: 4195477175218914364}
+  - {fileID: 955789415206869096}
   _installerPrefabs: []
   _autoRun: 1
   _kernel: {fileID: 0}
@@ -221,6 +224,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &955789415206869096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759025285193540280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c00413001a42a29d35c9f0721f636f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _factionMemberParallelInfoUpdater: {fileID: -4294200242459591198}
+--- !u!114 &-4294200242459591198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759025285193540280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92093625e1cf480081d3f30129fa5a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &759025284583352455
 MeshRenderer:
   m_ObjectHideFlags: 0

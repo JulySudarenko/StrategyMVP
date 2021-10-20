@@ -61,8 +61,8 @@ public class ProduceUnitCommandExecutor : CommandExecutorBase<IProduceUnitComman
         var queue = instance.GetComponent<ICommandsQueue>();
         var mainBuilding = GetComponent<MainBuilding>();
         queue.EnqueueCommand(new MoveCommand(mainBuilding.RallyPoint));
-        var factionMember = instance.GetComponent<FractionMember>();
-        factionMember.SetFaction(GetComponent<FractionMember>().FactionId);
+        var factionMember = instance.GetComponent<FactionMember>();
+        factionMember.SetFaction(GetComponent<FactionMember>().FactionId);
     }
     //
     // private Vector3 CreateRandomPlaceForNewUnit(Vector3 parentPlace)

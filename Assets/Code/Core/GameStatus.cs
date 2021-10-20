@@ -11,13 +11,13 @@ public class GameStatus : MonoBehaviour, IGameStatus
 
     private void CheckStatus(object state)
     {
-        if (FractionMember.FactionsCount == 0)
+        if (FactionMember.FactionsCount == 0)
         {
             _status.OnNext(0);
         }
-        else if (FractionMember.FactionsCount == 1)
+        else if (FactionMember.FactionsCount == 1)
         {
-            _status.OnNext(FractionMember.GetWinner());
+            _status.OnNext(FactionMember.GetWinner());
         }
     }
 

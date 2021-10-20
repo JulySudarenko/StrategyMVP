@@ -3,18 +3,12 @@ using System.Linq;
 using Interfaces;
 using UnityEngine;
 
-public class FractionMember : MonoBehaviour, IFractionMember
+public class FactionMember : MonoBehaviour, IFactionMember
 {
-    private static Dictionary<int, List<int>> _membersCount = new Dictionary<int, List<int>>();
-    public int FactionId => _factionId;
     [SerializeField] private int _factionId;
-
-    public void SetFaction(int factionId)
-    {
-        _factionId = factionId;
-        Register();
-    }
     
+    public int FactionId => _factionId;
+
     public static int FactionsCount
     {
         get
@@ -34,6 +28,9 @@ public class FractionMember : MonoBehaviour, IFractionMember
         }
     }
 
+    private static Dictionary<int, List<int>> _membersCount = new Dictionary<int, List<int>>();
+
+
     private void Awake()
     {
         if (_factionId != 0)
@@ -42,9 +39,15 @@ public class FractionMember : MonoBehaviour, IFractionMember
         }
     }
 
+    public void SetFaction(int factionId)
+    {
+        _factionId = factionId;
+        Register();
+    }
+
     private void OnDestroy()
     {
-        UnRegister();
+        Unregister();
     }
 
     private void Register()
@@ -63,7 +66,7 @@ public class FractionMember : MonoBehaviour, IFractionMember
         }
     }
 
-    private void UnRegister()
+    private void Unregister()
     {
         lock (_membersCount)
         {

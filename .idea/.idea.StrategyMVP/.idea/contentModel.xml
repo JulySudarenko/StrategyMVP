@@ -25,9 +25,10 @@
               <e p="ICommandExecutor.cs" t="Include" />
             </e>
             <e p="IAttackable.cs" t="Include" />
+            <e p="IAutomaticAttacker.cs" t="Include" />
             <e p="ICommandsQueue.cs" t="Include" />
             <e p="IDamageDealer.cs" t="Include" />
-            <e p="IFractionMember.cs" t="Include" />
+            <e p="IFactionMember.cs" t="Include" />
             <e p="IGameStatus.cs" t="Include" />
             <e p="IHealthHolder.cs" t="Include" />
             <e p="IHighlightable.cs" t="Include" />
@@ -42,6 +43,10 @@
             <e p="StatelessScriptableObjectValueBase.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
+            <e p="AttackerParallelnfoUpdater.cs" t="Include" />
+            <e p="AutoAttackAgent.cs" t="Include" />
+            <e p="AutoAttackCommand.cs" t="Include" />
+            <e p="AutoAttackEvaluator.cs" t="Include" />
             <e p="CollisionDetector.cs" t="Include" />
             <e p="CommandExecutor" t="Include">
               <e p="AttackCommandExecutor.cs" t="Include" />
@@ -54,12 +59,14 @@
             </e>
             <e p="Core.asmdef" t="Include" />
             <e p="CoreInstaller.cs" t="Include" />
-            <e p="FractionMember.cs" t="Include" />
+            <e p="FactionMember.cs" t="Include" />
+            <e p="FactionMemberParallelInfoUpdater.cs" t="Include" />
             <e p="GameStatus.cs" t="Include" />
             <e p="Highlighter.cs" t="Include" />
             <e p="MainBuilding" t="Include">
               <e p="MainBuilding.cs" t="Include" />
               <e p="MainBuildingCommandQueue.cs" t="Include" />
+              <e p="MainBuildingInstaller.cs" t="Include" />
             </e>
             <e p="MoveCommand.cs" t="Include" />
             <e p="StopCommand.cs" t="Include" />
@@ -127,6 +134,7 @@
             <e p="AssetsContext.cs" t="Include" />
             <e p="AssetsInjector.cs" t="Include" />
             <e p="AsyncExtensions.cs" t="Include" />
+            <e p="Deconstructors.cs" t="Include" />
             <e p="IAwaitable.cs" t="Include" />
             <e p="IAwaiter.cs" t="Include" />
             <e p="InjectAssetAtribute.cs" t="Include" />

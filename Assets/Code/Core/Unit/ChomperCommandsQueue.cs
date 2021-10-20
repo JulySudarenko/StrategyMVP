@@ -18,6 +18,8 @@ public class ChomperCommandsQueue : MonoBehaviour, ICommandsQueue
         _innerCollection
             .ObserveAdd().Subscribe(OnNewCommand).AddTo(this);
     }
+    
+    public ICommand CurrentCommand => _innerCollection.Count > 0 ? _innerCollection[0] : default;
 
     private void OnNewCommand(ICommand command, int index)
     {

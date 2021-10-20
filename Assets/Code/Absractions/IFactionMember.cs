@@ -1,6 +1,6 @@
 ﻿namespace Interfaces
 {
-    public interface IFractionMember
+    public interface IFactionMember
     {
         int FactionId { get; }
     }
