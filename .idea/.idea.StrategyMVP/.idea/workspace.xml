@@ -20,7 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50351235-d248-4d75-8d5e-15b0dc8ab3da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimatorControllers/CactusAnimatorController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimatorControllers/CactusAnimatorController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimatorControllers/SpiderAnimatorController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimatorControllers/SpiderAnimatorController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommandHeir.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommandHeir.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cactus.JPG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Cactus.JPG.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/SpiderBlack.JPG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/SpiderBlack.JPG.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/SpiderGreen.JPG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/SpiderGreen.JPG.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ob.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ob.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/StopCommandCommandCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/SetRallyPointCommandCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/CommandButtonsView.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/CommandButtonsModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuildingCommandQueue.cs" />
@@ -63,7 +75,6 @@
         <option value="$PROJECT_DIR$/Assets/Code/Utils/CollisionDetector.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Unit.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/UnitMovementStop.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/UiModelInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/ChomperCommandsQueue.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/IIconHolder.cs" />
@@ -76,7 +87,6 @@
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/IFractionMember.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/AttackCommandExecutor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/PatrolCommandExecutor.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/IGameStatus.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" />
@@ -105,6 +115,10 @@
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/IFactionMember.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/Unit/MainUnit.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/FactionMember.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommandHeir.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceSpiderCommandHeir.cs" />
       </list>
     </option>
   </component>
