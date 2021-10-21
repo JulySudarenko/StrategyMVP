@@ -20,26 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50351235-d248-4d75-8d5e-15b0dc8ab3da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Absractions/ICommandsQueue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Absractions/ICommandsQueue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Absractions/IFractionMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Absractions/IFactionMember.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Absractions/IFractionMember.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Absractions/IFactionMember.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Absractions/IHealthHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Absractions/IHealthHolder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CollisionDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CollisionDetector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/FractionMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/FactionMember.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/FractionMember.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/FactionMember.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/GameStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/GameStatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuilding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuilding.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuildingCommandQueue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuildingCommandQueue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/MoveCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/MoveCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Unit/ChomperCommandsQueue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Unit/ChomperCommandsQueue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Unit/ChomperInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Unit/ChomperInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Unit/MainUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Unit/MainUnit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ChomperFactory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ChomperFactory.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

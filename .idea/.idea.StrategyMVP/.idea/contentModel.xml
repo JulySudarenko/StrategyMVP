@@ -162,6 +162,9 @@
               <e p="Vegetation.shader" t="Include" />
             </e>
           </e>
+          <e p="PB_Spider" t="Include">
+            <e p="ReadMe.txt" t="Include" />
+          </e>
           <e p="TextMesh Pro" t="Include">
             <e p="Fonts" t="Include">
               <e p="LiberationSans - OFL.txt" t="Include" />
@@ -200,6 +203,7 @@
             <e p="OutlineAndShadow.shader" t="Include" />
           </e>
         </e>
+        <e p="ob.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="UniRx" t="Include">
             <e p="Examples" t="Include">
