@@ -12,6 +12,8 @@ public class UiModelInstaller : MonoInstaller
 
     [SerializeField] private Sprite _chomperSprite;
     [SerializeField] private GameObject _chomperPrefab;
+    [SerializeField] private Sprite _spiderSprite;
+    [SerializeField] private GameObject _spiderPrefab;
 
     public override void InstallBindings()
     {
@@ -38,6 +40,11 @@ public class UiModelInstaller : MonoInstaller
         Container.Bind<Sprite>().WithId("Chomper").FromInstance(_chomperSprite);
         Container.Bind<GameObject>().WithId("Chomper").FromInstance(_chomperPrefab);
 
+        Container.Bind<float>().WithId("Spider").FromInstance(10f);
+        Container.Bind<string>().WithId("Spider").FromInstance("Spider");
+        Container.Bind<Sprite>().WithId("Spider").FromInstance(_spiderSprite);
+        Container.Bind<GameObject>().WithId("Spider").FromInstance(_spiderPrefab);
+        
         Container.Bind<CommandButtonsModel>().AsTransient();
         Container.Bind<BottomCenterModel>().AsTransient();
     }
