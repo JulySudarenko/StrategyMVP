@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class ScriptableObjectValueBase<T> : ScriptableObject, IAwaitable<T>
+public class  ScriptableObjectValueBase<T> : ScriptableObject, IAwaitable<T>
 {
     public class NewValueNotifier<TAwaited> :  AwaitedBase<TAwaited>
     {

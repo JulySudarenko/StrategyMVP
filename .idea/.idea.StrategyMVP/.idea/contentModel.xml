@@ -10,7 +10,6 @@
         <e p="Code" t="Include">
           <e p="Absractions" t="Include">
             <e p="Abstractions.asmdef" t="Include" />
-            <e p="AwaitedBase.cs" t="Include" />
             <e p="Commands" t="Include">
               <e p="CommandExecutorBase.cs" t="Include" />
               <e p="CommandInterfaces" t="Include">
@@ -38,9 +37,6 @@
             <e p="IUnit.cs" t="Include" />
             <e p="IUnitProducer.cs" t="Include" />
             <e p="IUnitProductionTask.cs" t="Include" />
-            <e p="ScriptableObjectValueBase.cs" t="Include" />
-            <e p="StatefulScriptableObjectValueBase.cs" t="Include" />
-            <e p="StatelessScriptableObjectValueBase.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
             <e p="AttackerParallelnfoUpdater.cs" t="Include" />
@@ -135,10 +131,14 @@
             <e p="AssetsContext.cs" t="Include" />
             <e p="AssetsInjector.cs" t="Include" />
             <e p="AsyncExtensions.cs" t="Include" />
+            <e p="AwaitedBase.cs" t="Include" />
             <e p="Deconstructors.cs" t="Include" />
             <e p="IAwaitable.cs" t="Include" />
             <e p="IAwaiter.cs" t="Include" />
             <e p="InjectAssetAtribute.cs" t="Include" />
+            <e p="ScriptableObjectValueBase.cs" t="Include" />
+            <e p="StatefulScriptableObjectValueBase.cs" t="Include" />
+            <e p="StatelessScriptableObjectValueBase.cs" t="Include" />
             <e p="UniRxExtensions.cs" t="Include" />
             <e p="Utils.asmdef" t="Include" />
           </e>

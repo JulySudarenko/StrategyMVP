@@ -5,7 +5,7 @@ using Zenject;
 
 namespace CommandsRealization
 {
-    public class ProduceUnitCommand : IProduceUnitCommand
+    public abstract class ProduceUnitCommand : IProduceUnitCommand
     {
         public Sprite Icon { get; }
         public GameObject UnitPrefab { get; }

@@ -36,31 +36,31 @@ public partial class AttackCommandExecutor : CommandExecutorBase<IAttackCommand>
                 (float) Math.Round(value.z, 2)))
             .Distinct()
             .ObserveOnMainThread()
-            .Subscribe(startMovingToPosition);
+            .Subscribe(StartMovingToPosition);
 
         _attackTargets
             .ObserveOnMainThread()
-            .Subscribe(startAttackingTargets);
+            .Subscribe(StartAttackingTargets);
 
         _targetRotations
             .ObserveOnMainThread()
-            .Subscribe(setAttackRoation);
+            .Subscribe(SetAttackRotation);
     }
 
-    private void setAttackRoation(Quaternion targetRotation)
+    private void SetAttackRotation(Quaternion targetRotation)
     {
         transform.rotation = targetRotation;
     }
 
-    private void startAttackingTargets(IAttackable target)
+    private void StartAttackingTargets(IAttackable target)
     {
         GetComponent<NavMeshAgent>().isStopped = true;
         GetComponent<NavMeshAgent>().ResetPath();
-        _animator.SetTrigger("Attack");
+        _animator.SetTrigger(Animator.StringToHash("Attack"));
         target.ReceiveDamage(GetComponent<IDamageDealer>().Damage);
     }
 
-    private void startMovingToPosition(Vector3 position)
+    private void StartMovingToPosition(Vector3 position)
     {
         GetComponent<NavMeshAgent>().destination = position;
         _animator.SetTrigger("Walk");
@@ -139,7 +139,7 @@ public partial class AttackCommandExecutor : CommandExecutorBase<IAttackCommand>
             _target = target;
             _attackCommandExecutor = attackCommandExecutor;
 
-            var thread = new Thread(attackAlgorythm);
+            var thread = new Thread(AttackAlgorythm);
             thread.Start();
         }
 
@@ -149,7 +149,7 @@ public partial class AttackCommandExecutor : CommandExecutorBase<IAttackCommand>
             OnComplete?.Invoke();
         }
 
-        private void attackAlgorythm(object obj)
+        private void AttackAlgorythm(object obj)
         {
             while (true)
             {

@@ -25,14 +25,14 @@ public class ProduceUnitCommandExecutor : CommandExecutorBase<IProduceUnitComman
         innerTask.TimeLeft -= Time.deltaTime;
         if (innerTask.TimeLeft <= 0)
         {
-            removeTaskAtIndex(0);
+            RemoveTaskAtIndex(0);
             CreateNewUnit(innerTask);
         }
     }
 
-    public void Cancel(int index) => removeTaskAtIndex(index);
+    public void Cancel(int index) => RemoveTaskAtIndex(index);
 
-    private void removeTaskAtIndex(int index)
+    private void RemoveTaskAtIndex(int index)
     {
         for (int i = index; i < _queue.Count - 1; i++)
         {

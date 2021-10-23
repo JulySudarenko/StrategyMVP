@@ -29,6 +29,7 @@ public class MoveCommandExecutor : CommandExecutorBase<IMoveCommand>
             _navMeshAgent.ResetPath();
         }
 
+        _stopCommandExecutor.CancellationTokenSource = null;
         _animator.SetTrigger("Idle");
     }
 }

@@ -39,9 +39,9 @@ namespace View
                 .GetComponent<Selectable>().interactable = false;
         }
 
-        public void UnblockAllInteractions() => SetInteractible(true);
+        public void UnblockAllInteractions() => SetInteractable(true);
 
-        private void SetInteractible(bool value)
+        private void SetInteractable(bool value)
         {
             _attackButton.GetComponent<Selectable>().interactable = value;
             _moveButton.GetComponent<Selectable>().interactable = value;
