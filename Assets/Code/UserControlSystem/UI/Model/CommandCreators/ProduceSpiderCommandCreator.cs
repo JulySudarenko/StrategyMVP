@@ -4,12 +4,12 @@ using Interfaces;
 using Utils;
 using Zenject;
 
-public class ProduceUnitCommandCommandCreator : CommandCreatorBase<IProduceUnitCommand>
+public class ProduceSpiderCommandCreator : CommandCreatorBase<IProduceSpiderCommand>
 {
     [Inject] private AssetsContext _context;
     [Inject] private DiContainer _diContainer;
 
-    protected override void ClassSpecificCommandCreation(Action<IProduceUnitCommand> creationCallback)
+    protected override void ClassSpecificCommandCreation(Action<IProduceSpiderCommand> creationCallback)
     {
         var produceUnitCommand = _context.Inject(new ProduceSpiderCommandHeir());
         _diContainer.Inject(produceUnitCommand);

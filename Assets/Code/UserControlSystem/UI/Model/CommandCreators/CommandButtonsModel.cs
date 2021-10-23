@@ -9,7 +9,8 @@ public class CommandButtonsModel
     public event Action OnCommandSent;
     public event Action OnCommandCancel;
 
-    [Inject] private CommandCreatorBase<IProduceUnitCommand> _unitProducer;
+    [Inject] private CommandCreatorBase<IProduceChomperCommand> _chomperProducer;
+    [Inject] private CommandCreatorBase<IProduceSpiderCommand> _spiderProducer;
     [Inject] private CommandCreatorBase<IAttackCommand> _attacker;
     [Inject] private CommandCreatorBase<IStopCommand> _stopper;
     [Inject] private CommandCreatorBase<IMoveCommand> _mover;
@@ -27,7 +28,8 @@ public class CommandButtonsModel
         _commandIsPending = true;
         OnCommandAccepted?.Invoke(commandExecutor);
 
-        _unitProducer.ProcessCommandExecutor(commandExecutor, command => ExecuteCommandWrapper(command, commandsQueue));
+        _chomperProducer.ProcessCommandExecutor(commandExecutor, command => ExecuteCommandWrapper(command, commandsQueue));
+        _spiderProducer.ProcessCommandExecutor(commandExecutor, command => ExecuteCommandWrapper(command, commandsQueue));
         _attacker.ProcessCommandExecutor(commandExecutor, command => ExecuteCommandWrapper(command, commandsQueue));
         _stopper.ProcessCommandExecutor(commandExecutor, command => ExecuteCommandWrapper(command, commandsQueue));
         _mover.ProcessCommandExecutor(commandExecutor, command => ExecuteCommandWrapper(command, commandsQueue));
@@ -54,7 +56,8 @@ public class CommandButtonsModel
 
     private void ProcessOnCancel()
     {
-        _unitProducer.ProcessCancel();
+        _chomperProducer.ProcessCancel();
+        _spiderProducer.ProcessCancel();
         _attacker.ProcessCancel();
         _stopper.ProcessCancel();
         _mover.ProcessCancel();

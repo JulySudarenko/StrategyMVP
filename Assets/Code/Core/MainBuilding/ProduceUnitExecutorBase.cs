@@ -4,7 +4,8 @@ using UniRx;
 using UnityEngine;
 using Zenject;
 
-public class ProduceUnitCommandExecutor : CommandExecutorBase<IProduceUnitCommand>, IUnitProducer
+public abstract class ProduceUnitExecutorBase<T> : CommandExecutorBase<T>, IUnitProducer
+    where T : class, IProduceUnitCommand
 {
     public IReadOnlyReactiveCollection<IUnitProductionTask> Queue => _queue;
 
@@ -42,7 +43,7 @@ public class ProduceUnitCommandExecutor : CommandExecutorBase<IProduceUnitComman
         _queue.RemoveAt(_queue.Count - 1);
     }
 
-    public override async Task ExecuteSpecificCommand(IProduceUnitCommand command)
+    public override async Task ExecuteSpecificCommand(T command)
     {
         if (_queue.Count < _maximumUnitsInQueue)
         {

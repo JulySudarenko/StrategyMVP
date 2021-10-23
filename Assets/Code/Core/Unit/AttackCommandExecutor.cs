@@ -27,6 +27,9 @@ public partial class AttackCommandExecutor : CommandExecutorBase<IAttackCommand>
 
     private Transform _targetTransform;
     private AttackOperation _currentAttackOp;
+    private static readonly int Walk = Animator.StringToHash("Walk");
+    private static readonly int Attack = Animator.StringToHash("Attack");
+    private static readonly int Idle = Animator.StringToHash("Idle");
 
     [Inject]
     private void Init()
@@ -56,14 +59,14 @@ public partial class AttackCommandExecutor : CommandExecutorBase<IAttackCommand>
     {
         GetComponent<NavMeshAgent>().isStopped = true;
         GetComponent<NavMeshAgent>().ResetPath();
-        _animator.SetTrigger(Animator.StringToHash("Attack"));
+        _animator.SetTrigger(Attack);
         target.ReceiveDamage(GetComponent<IDamageDealer>().Damage);
     }
 
     private void StartMovingToPosition(Vector3 position)
     {
         GetComponent<NavMeshAgent>().destination = position;
-        _animator.SetTrigger("Walk");
+        _animator.SetTrigger(Walk);
     }
 
     public override async Task ExecuteSpecificCommand(IAttackCommand command)
@@ -81,7 +84,7 @@ public partial class AttackCommandExecutor : CommandExecutorBase<IAttackCommand>
             _currentAttackOp.Cancel();
         }
 
-        _animator.SetTrigger("Idle");
+        _animator.SetTrigger(Idle);
         _currentAttackOp = null;
         _targetTransform = null;
         _stopCommandExecutor.CancellationTokenSource = null;

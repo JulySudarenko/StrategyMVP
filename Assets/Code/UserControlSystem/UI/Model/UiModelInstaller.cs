@@ -22,8 +22,11 @@ public class UiModelInstaller : MonoInstaller
         Container.Bind<AttackableValue>().FromInstance(_attackedRMB);
         Container.Bind<SelectableValue>().FromInstance(_selectableValue);
 
-        Container.Bind<CommandCreatorBase<IProduceUnitCommand>>()
-            .To<ProduceUnitCommandCommandCreator>().AsTransient();
+        Container.Bind<CommandCreatorBase<IProduceChomperCommand>>()
+            .To<ProduceChomperCommandCreator>().AsTransient();
+        Container.Bind<CommandCreatorBase<IProduceSpiderCommand>>()
+            .To<ProduceSpiderCommandCreator>().AsTransient();
+        
         Container.Bind<CommandCreatorBase<IAttackCommand>>()
             .To<AttackCommandCommandCreator>().AsTransient();
         Container.Bind<CommandCreatorBase<IMoveCommand>>()

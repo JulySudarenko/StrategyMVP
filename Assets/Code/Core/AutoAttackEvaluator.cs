@@ -4,6 +4,7 @@ using Interfaces;
 using UniRx;
 using UnityEngine;
 
+
 public class AutoAttackEvaluator : MonoBehaviour
 {
     public class FactionMemberParallelInfo
@@ -52,10 +53,10 @@ public class AutoAttackEvaluator : MonoBehaviour
 
     private void Update()
     {
-        Parallel.ForEach(AttackersInfo, kvp => evaluate(kvp.Key, kvp.Value));
+        Parallel.ForEach(AttackersInfo, kvp => Evaluate(kvp.Key, kvp.Value));
     }
 
-    private void evaluate(GameObject go, AttackerParallelnfo info)
+    private void Evaluate(GameObject go, AttackerParallelnfo info)
     {
         if (info.CurrentCommand is IMoveCommand)
         {

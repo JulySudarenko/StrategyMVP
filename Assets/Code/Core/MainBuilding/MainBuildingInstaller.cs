@@ -10,5 +10,9 @@ public class MainBuildingInstaller : MonoInstaller
     {
         Container.Bind<ITickable>().FromInstance(_factionMemberParallelInfoUpdater);
         Container.Bind<IFactionMember>().FromComponentInChildren();
+        // Container.Bind<IProduceChomperCommand>().FromComponentsInHierarchy().AsTransient();
+        // Container.Bind<IProduceSpiderCommand>().FromComponentsInHierarchy().AsTransient();
+        // Container.BindInterfacesAndSelfTo<ProduceChomperExecutor>().FromComponentsInHierarchy().AsTransient();
+        // Container.BindInterfacesAndSelfTo<ProduceSpiderExecutor>().FromComponentsInHierarchy().AsTransient();
     }
 }
