@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1134981143997636044}
   - component: {fileID: 8328418866615720591}
   - component: {fileID: 6349435023647657969}
-  - component: {fileID: 2605902940219317547}
   - component: {fileID: -3686379399976677629}
   - component: {fileID: 6977212086300151071}
   - component: {fileID: 6330041628403022083}
@@ -26,6 +25,7 @@ GameObject:
   - component: {fileID: 8967376850640375574}
   - component: {fileID: 1134543133570996530}
   - component: {fileID: 660822149459388806}
+  - component: {fileID: 6677236470730260553}
   m_Layer: 0
   m_Name: Chomper
   m_TagString: Untagged
@@ -123,26 +123,6 @@ MonoBehaviour:
   _stop: {fileID: 6330041628403022083}
   _animator: {fileID: 6977212086300151071}
   _stopCommandExecutor: {fileID: 1134981143997636044}
---- !u!114 &2605902940219317547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1184402856757105351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9b34728abae7414bbef63d8ce8d3a5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _visionRadius: 8
-  _icon: {fileID: 21300000, guid: fd2810b53a6d7f14bb6ddb7ae2a866a9, type: 3}
-  _maxHealth: 100
-  _health: 100
-  _transform: {fileID: 675943523957521392}
-  _animator: {fileID: 6977212086300151071}
-  _stopCommand: {fileID: 1134981143997636044}
-  _damage: 25
 --- !u!195 &-3686379399976677629
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -307,6 +287,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92093625e1cf480081d3f30129fa5a68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6677236470730260553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184402856757105351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687f2511fdbf4ee1aa9cc871ae4bc29e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visionRadius: 8
+  _icon: {fileID: 21300000, guid: fd2810b53a6d7f14bb6ddb7ae2a866a9, type: 3}
+  _maxHealth: 100
+  _health: 100
+  _transform: {fileID: 675943523957521392}
+  _animator: {fileID: 6977212086300151071}
+  _stopCommand: {fileID: 1134981143997636044}
+  _damage: 25
 --- !u!1 &4897105491518147070
 GameObject:
   m_ObjectHideFlags: 0

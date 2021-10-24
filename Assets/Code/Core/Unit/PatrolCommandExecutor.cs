@@ -10,6 +10,8 @@ public class PatrolCommandExecutor : CommandExecutorBase<IPatrolCommand>
     [SerializeField] private UnitMovementStop _stop;
     [SerializeField] private Animator _animator;
     [SerializeField] private StopCommandExecutor _stopCommandExecutor;
+    private static readonly int Walk = Animator.StringToHash("Walk");
+    private static readonly int Idle = Animator.StringToHash("Idle");
 
     public override async Task ExecuteSpecificCommand(IPatrolCommand command)
     {
@@ -19,7 +21,7 @@ public class PatrolCommandExecutor : CommandExecutorBase<IPatrolCommand>
         {
             GetComponent<NavMeshAgent>().destination = point2;
             _animator
-                .SetTrigger("Walk");
+                .SetTrigger(Walk);
             _stopCommandExecutor.CancellationTokenSource = new CancellationTokenSource();
             try
             {
@@ -38,6 +40,6 @@ public class PatrolCommandExecutor : CommandExecutorBase<IPatrolCommand>
         }
 
         _stopCommandExecutor.CancellationTokenSource = null;
-        _animator.SetTrigger("Idle");
+        _animator.SetTrigger(Idle);
     }
 }

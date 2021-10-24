@@ -85,7 +85,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9021585159749493724}
   - component: {fileID: 570265959958909847}
-  - component: {fileID: -648725536295738870}
   - component: {fileID: 1928147592750778956}
   - component: {fileID: 7410044886521897967}
   - component: {fileID: -7008305869093823968}
@@ -101,8 +100,9 @@ GameObject:
   - component: {fileID: 1485924965880648551}
   - component: {fileID: -2495371100050866413}
   - component: {fileID: 560844673496783812}
+  - component: {fileID: 6050697069478861214}
   m_Layer: 0
-  m_Name: SpiderBlack
+  m_Name: Spider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,26 +144,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-648725536295738870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3685686206779761647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9b34728abae7414bbef63d8ce8d3a5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _visionRadius: 8
-  _icon: {fileID: 21300000, guid: 7806731d9dc03b44c86fade455dbf330, type: 3}
-  _maxHealth: 200
-  _health: 200
-  _transform: {fileID: 9021585159749493724}
-  _animator: {fileID: 570265959958909847}
-  _stopCommand: {fileID: 1931998645928306337}
-  _damage: 50
 --- !u!114 &1928147592750778956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _meshRenderers: []
-  _highlightMaterial: {fileID: 0}
+  _highlightMaterial: {fileID: 2100000, guid: 09767283a71a5604a82670ef6106b246, type: 2}
   _highlightCircle: {fileID: 2465243896483881417}
   _isOutlined: 0
   _isHighlighted: 1
@@ -222,9 +202,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e00a9446f44852a3a932ffdeb4d361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stop: {fileID: 0}
-  _animator: {fileID: 0}
-  _stopCommandExecutor: {fileID: 0}
+  _stop: {fileID: 5212724479529766962}
+  _animator: {fileID: 570265959958909847}
+  _stopCommandExecutor: {fileID: 1931998645928306337}
 --- !u!114 &1931998645928306337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +362,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _queue: {fileID: 4207885619834655908}
+--- !u!114 &6050697069478861214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3685686206779761647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68dcdeb30a214700b3686d7213dac798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visionRadius: 8
+  _icon: {fileID: 21300000, guid: 7806731d9dc03b44c86fade455dbf330, type: 3}
+  _maxHealth: 200
+  _health: 200
+  _transform: {fileID: 9021585159749493724}
+  _animator: {fileID: 570265959958909847}
+  _stopCommand: {fileID: 1931998645928306337}
+  _damage: 50
 --- !u!1001 &1537365814220432746
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -53,6 +53,7 @@
             <e p="Highlighter.cs" t="Include" />
             <e p="MainBuilding" t="Include">
               <e p="ChomperBuilding.cs" t="Include" />
+              <e p="ChomperBuildingCommandQueue.cs" t="Include" />
               <e p="MainBuilding.cs" t="Include" />
               <e p="MainBuildingCommandQueue.cs" t="Include" />
               <e p="MainBuildingInstaller.cs" t="Include" />
@@ -61,6 +62,7 @@
               <e p="ProduceUnitExecutorBase.cs" t="Include" />
               <e p="SetRallyPointCommandExecutor.cs" t="Include" />
               <e p="SpiderBuilding.cs" t="Include" />
+              <e p="SpiderBuildingCommandQueue.cs" t="Include" />
             </e>
             <e p="MoveCommand.cs" t="Include" />
             <e p="StopCommand.cs" t="Include" />
@@ -69,9 +71,11 @@
               <e p="AttackCommandExecutor.cs" t="Include" />
               <e p="ChomperCommandsQueue.cs" t="Include" />
               <e p="ChomperInstaller.cs" t="Include" />
+              <e p="ChomperUnit.cs" t="Include" />
               <e p="MainUnit.cs" t="Include" />
               <e p="MoveCommandExecutor.cs" t="Include" />
               <e p="PatrolCommandExecutor.cs" t="Include" />
+              <e p="SpiderUnit.cs" t="Include" />
               <e p="StopCommandExecutor.cs" t="Include" />
               <e p="UnitMovementStop.cs" t="Include" />
               <e p="UnitProductionTask.cs" t="Include" />
