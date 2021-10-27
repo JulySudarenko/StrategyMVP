@@ -13,6 +13,11 @@ public class Highlighter : MonoBehaviour, IHighlightable
 
     public void HighlightSelectedObject(bool isSelected)
     {
+        if (this == null)
+        {
+            return;
+        }
+        
         if (_isSelectedActual == isSelected)
         {
             return;
@@ -52,12 +57,10 @@ public class Highlighter : MonoBehaviour, IHighlightable
             var allMaterials = renderer.materials.ToList();
             if (isSelected)
             {
-                _highlightCircle.SetActive(true);
                 allMaterials.Add(_highlightMaterial);
             }
             else
             {
-                _highlightCircle.SetActive(false);
                 allMaterials.RemoveAt(allMaterials.Count - 1);
             }
 

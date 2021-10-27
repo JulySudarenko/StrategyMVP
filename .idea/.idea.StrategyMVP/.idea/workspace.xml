@@ -20,18 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50351235-d248-4d75-8d5e-15b0dc8ab3da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/ChomperBuildingCommandQueue.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/ChomperBuildingCommandQueue.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/SpiderBuildingCommandQueue.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/SpiderBuildingCommandQueue.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Unit/ChomperUnit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Unit/ChomperUnit.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Unit/SpiderUnit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Unit/SpiderUnit.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StrategyMVP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/ChomperCommandsQueue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/ChomperCommandsQueue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/CoreInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/CoreInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/UiModelInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/UiModelInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuildingCommandQueue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuildingCommandQueue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuildingCommandQueue.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuildingCommandQueue.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuildingInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuildingInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Unit/MainUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Unit/MainUnit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Unit/PatrolCommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Unit/PatrolCommandExecutor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chomper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ChomperFactory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ChomperFactory.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spider.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spider.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpiderFactory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpiderFactory.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,74 +55,85 @@
     <setting file="file://$PROJECT_DIR$/../FirstAndrey18/Assets/Standard Assets/CrossPlatformInput/Scripts/MobileControlRig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29AD182F-AA3F-478C-9310-D6A2E7143C15/ea/4cbb7152/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/CommandButtonsView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UserControlSystem.asmdef" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2019.4.16f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../!Архив/StrategyFinal/Strategy/Assets/Scripts/Core/Deconstructors.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/3f/c3a6fa58/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4D9F7249-F1DE-41E3-8466-8FEA10E9822F/55/3bf8e6cc/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/da/7a01a81a/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/CommandButtonsView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/d1/a0d2ba72/AwaitTaskContinuation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2019.4.16f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/View.asmdef" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UserControlSystem.asmdef" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/df/c2b2995d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/07E9F93B-87DF-4DD5-A351-4E4E47DF3324/04/a590c365/IProduceUnitCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8D3A4CBA-CDAE-45B3-84E0-E80B376938E1/65/529b41a2/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../FirstAndrey18/Assets/Environment/Code/Inventar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../FirstAndrey18/Assets/Environment/Code/LazerFPS.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2019.4.16f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2019.4.16f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../!Архив/StrategyFinal/Strategy/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Threading/BackgroundWorker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/4e/bd2d656f/AsyncTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/56/3685deec/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/ISelectable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IProduceUnitCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/UnitProductionTask.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/IUnitProducer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/Vector3Value.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomLeftUIPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomCenterPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/BottomCenterModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/UnitProductionTask.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/ProduceUnitCommandCommandCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/ICommandExecutor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/StopCommandExecutor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/CommandCreatorBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/IHighlightable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/TimeModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandExecutorBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/BottomCenterView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ChomperCommandsQueue.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/CommandExecutorsInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/StrategyInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/PatrolCommandExecutor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IAttackCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/ISetRallyPointCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/StopCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/SetRallyPointCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/AttackCommandExecutor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Selector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/SetRallyPointCommandExecutor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/BuildingSelector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/StopCommandCommandCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/SetRallyPointCommandCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/CommandButtonsView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/CommandButtonsModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuildingCommandQueue.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/StopCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CoreInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MenuPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/GameOverScreenPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/IHealthHolder.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/MoveCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Utils/UniRxExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Utils/CollisionDetector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Unit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/UnitMovementStop.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/UiModelInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/ChomperCommandsQueue.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/CoreInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Absractions/IIconHolder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Utils/Deconstructors.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CollisionDetector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/FractionMember.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/FactionMemberParallelInfoUpdater.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/AttackerParallelnfoUpdater.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/IHighlightable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/ICommandsQueue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/AutoAttackAgent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Unit/ChomperInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Absractions/IFactionMember.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/FactionMember.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommandHeir.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/StrategyInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/HighlighterPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/ICommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/ScriptableObjectValueBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/AttackCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/MoveCommandExecutor.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/CommandButtonsPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/AutoAttackCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/AutoAttackEvaluator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceUnitCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/ProduceUnitCommandCommandCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuilding.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IProduceUnitCommandBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Absractions/Commands/CommandInterfaces/IProduceUnitCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/CommandExecutor/ProduceUnitExecutorBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Unit/AttackCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/UiModelInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/ProduceUnitCommandCreatorBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/ProduceSpiderCommandCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/ProduceChomperCommandCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/CommandButtonsModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceSpiderCommandHeir.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/CommandsRealization/ProduceChomperCommandHeir.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/View/CommandButtonsView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuildingCommandQueue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/ChomperBuildingCommandQueue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/SpiderBuildingCommandQueue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Unit/MainUnit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Unit/ChomperCommandsQueue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Highlighter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/Unit/PatrolCommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Core/MainBuilding/MainBuildingInstaller.cs" />
       </list>
     </option>
   </component>
@@ -137,10 +156,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3112">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="3112" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -178,78 +197,78 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="642" height="464" key="DebuggerActiveHint" timestamp="1634205276291">
+    <state width="642" height="464" key="DebuggerActiveHint" timestamp="1635084847672">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="642" height="464" key="DebuggerActiveHint/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634205276291" />
-    <state width="1493" height="285" key="GridCell.Tab.0.bottom" timestamp="1634235258679">
+    <state width="642" height="464" key="DebuggerActiveHint/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635084847672" />
+    <state width="1493" height="281" key="GridCell.Tab.0.bottom" timestamp="1635086336307">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.0.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258679" />
-    <state width="1493" height="285" key="GridCell.Tab.0.center" timestamp="1634235258679">
+    <state width="1493" height="281" key="GridCell.Tab.0.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336307" />
+    <state width="1493" height="281" key="GridCell.Tab.0.center" timestamp="1635086336307">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.0.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258679" />
-    <state width="1493" height="285" key="GridCell.Tab.0.left" timestamp="1634235258679">
+    <state width="1493" height="281" key="GridCell.Tab.0.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336307" />
+    <state width="1493" height="281" key="GridCell.Tab.0.left" timestamp="1635086336306">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.0.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258679" />
-    <state width="1493" height="285" key="GridCell.Tab.0.right" timestamp="1634235258679">
+    <state width="1493" height="281" key="GridCell.Tab.0.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336306" />
+    <state width="1493" height="281" key="GridCell.Tab.0.right" timestamp="1635086336307">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.0.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258679" />
-    <state width="1493" height="285" key="GridCell.Tab.1.bottom" timestamp="1634235258680">
+    <state width="1493" height="281" key="GridCell.Tab.0.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336307" />
+    <state width="1493" height="281" key="GridCell.Tab.1.bottom" timestamp="1635086336308">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.1.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258680" />
-    <state width="1493" height="285" key="GridCell.Tab.1.center" timestamp="1634235258680">
+    <state width="1493" height="281" key="GridCell.Tab.1.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336308" />
+    <state width="1493" height="281" key="GridCell.Tab.1.center" timestamp="1635086336307">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.1.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258680" />
-    <state width="1493" height="285" key="GridCell.Tab.1.left" timestamp="1634235258680">
+    <state width="1493" height="281" key="GridCell.Tab.1.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336307" />
+    <state width="1493" height="281" key="GridCell.Tab.1.left" timestamp="1635086336307">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.1.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258680" />
-    <state width="1493" height="285" key="GridCell.Tab.1.right" timestamp="1634235258680">
+    <state width="1493" height="281" key="GridCell.Tab.1.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336307" />
+    <state width="1493" height="281" key="GridCell.Tab.1.right" timestamp="1635086336307">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.1.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258680" />
-    <state width="1493" height="285" key="GridCell.Tab.2.bottom" timestamp="1634235258680">
+    <state width="1493" height="281" key="GridCell.Tab.1.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336307" />
+    <state width="1493" height="281" key="GridCell.Tab.2.bottom" timestamp="1635086336308">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.2.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258680" />
-    <state width="1493" height="285" key="GridCell.Tab.2.center" timestamp="1634235258680">
+    <state width="1493" height="281" key="GridCell.Tab.2.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336308" />
+    <state width="1493" height="281" key="GridCell.Tab.2.center" timestamp="1635086336308">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.2.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258680" />
-    <state width="1493" height="285" key="GridCell.Tab.2.left" timestamp="1634235258680">
+    <state width="1493" height="281" key="GridCell.Tab.2.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336308" />
+    <state width="1493" height="281" key="GridCell.Tab.2.left" timestamp="1635086336308">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.2.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258680" />
-    <state width="1493" height="285" key="GridCell.Tab.2.right" timestamp="1634235258680">
+    <state width="1493" height="281" key="GridCell.Tab.2.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336308" />
+    <state width="1493" height="281" key="GridCell.Tab.2.right" timestamp="1635086336308">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.2.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258680" />
-    <state width="1493" height="285" key="GridCell.Tab.3.bottom" timestamp="1634235258680">
+    <state width="1493" height="281" key="GridCell.Tab.2.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336308" />
+    <state width="1493" height="281" key="GridCell.Tab.3.bottom" timestamp="1635086336308">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.3.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258680" />
-    <state width="1493" height="285" key="GridCell.Tab.3.center" timestamp="1634235258680">
+    <state width="1493" height="281" key="GridCell.Tab.3.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336308" />
+    <state width="1493" height="281" key="GridCell.Tab.3.center" timestamp="1635086336308">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.3.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258680" />
-    <state width="1493" height="285" key="GridCell.Tab.3.left" timestamp="1634235258680">
+    <state width="1493" height="281" key="GridCell.Tab.3.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336308" />
+    <state width="1493" height="281" key="GridCell.Tab.3.left" timestamp="1635086336308">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.3.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258680" />
-    <state width="1493" height="285" key="GridCell.Tab.3.right" timestamp="1634235258680">
+    <state width="1493" height="281" key="GridCell.Tab.3.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336308" />
+    <state width="1493" height="281" key="GridCell.Tab.3.right" timestamp="1635086336308">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="285" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634235258680" />
-    <state x="2517" y="-68" key="RiderGenerateDialog" timestamp="1633956869342">
+    <state width="1493" height="281" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1635086336308" />
+    <state x="2517" y="-68" key="RiderGenerateDialog" timestamp="1634827675317">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state x="2517" y="-68" key="RiderGenerateDialog/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1633956869342" />
+    <state x="2517" y="-68" key="RiderGenerateDialog/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1634827675317" />
     <state x="2345" y="110" key="run.anything.popup" timestamp="1633440920367">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
@@ -263,43 +282,43 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/BottomCenterPresenter.cs</url>
-          <line>46</line>
-          <properties documentPath="D:\geekbrains.ru\Projects\Unity\StrategyMVP\Assets\Code\UserControlSystem\UI\Presenter\BottomCenterPresenter.cs" initialLine="46">
+          <url>file://$PROJECT_DIR$/Assets/Code/Core/Unit/ChomperCommandsQueue.cs</url>
+          <line>37</line>
+          <properties documentPath="D:\geekbrains.ru\Projects\Unity\StrategyMVP\Assets\Code\Core\Unit\ChomperCommandsQueue.cs" initialLine="37">
             <startOffsets>
-              <option value="1618" />
+              <option value="1268" />
             </startOffsets>
             <endOffsets>
-              <option value="1657" />
+              <option value="1299" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Model/CommandCreators/ProduceUnitCommandCommandCreator.cs</url>
-          <line>13</line>
-          <properties documentPath="D:\geekbrains.ru\Projects\Unity\StrategyMVP\Assets\Code\UserControlSystem\UI\Model\CommandCreators\ProduceUnitCommandCommandCreator.cs" initialLine="13">
+          <url>file://$PROJECT_DIR$/Assets/Code/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs</url>
+          <line>28</line>
+          <properties documentPath="D:\geekbrains.ru\Projects\Unity\StrategyMVP\Assets\Code\UserControlSystem\UI\Presenter\MouseInteractionPresenter.cs" initialLine="28">
             <startOffsets>
-              <option value="388" />
+              <option value="838" />
             </startOffsets>
             <endOffsets>
-              <option value="455" />
+              <option value="865" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Code/Core/ChomperCommandsQueue.cs</url>
-          <line>31</line>
-          <properties documentPath="D:\geekbrains.ru\Projects\Unity\StrategyMVP\Assets\Code\Core\ChomperCommandsQueue.cs" initialLine="31">
+          <url>file://$PROJECT_DIR$/Assets/Code/Core/MainBuilding/ProduceUnitExecutorBase.cs</url>
+          <line>59</line>
+          <properties documentPath="D:\geekbrains.ru\Projects\Unity\StrategyMVP\Assets\Code\Core\MainBuilding\ProduceUnitExecutorBase.cs" initialLine="59">
             <startOffsets>
-              <option value="909" />
+              <option value="1713" />
             </startOffsets>
             <endOffsets>
-              <option value="963" />
+              <option value="1765" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

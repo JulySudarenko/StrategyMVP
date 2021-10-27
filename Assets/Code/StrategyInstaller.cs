@@ -12,7 +12,9 @@ public class StrategyInstaller : ScriptableObjectInstaller<StrategyInstaller>
     [SerializeField] private AttackableValue _attackableClicksRMB;
     [SerializeField] private SelectableValue _selectables;
     [SerializeField] private Sprite _chomperSprite;
+    [SerializeField] private Sprite _spiderSprite;
     [SerializeField] private ChomperCommandsQueue _chomperPrefab;
+    [SerializeField] private ChomperCommandsQueue _spiderPrefab;
 
     public override void InstallBindings()
     {
@@ -23,5 +25,8 @@ public class StrategyInstaller : ScriptableObjectInstaller<StrategyInstaller>
         
         Container.Bind<Sprite>().WithId("Chomper").FromInstance(_chomperSprite);
         Container.Bind<ChomperCommandsQueue>().WithId("Chomper").FromInstance(_chomperPrefab);
+        
+        Container.Bind<Sprite>().WithId("Spider").FromInstance(_spiderSprite);
+        Container.Bind<ChomperCommandsQueue>().WithId("Spider").FromInstance(_spiderPrefab);
     }
 }

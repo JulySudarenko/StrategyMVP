@@ -16,7 +16,8 @@ namespace View
         [SerializeField] private GameObject _moveButton;
         [SerializeField] private GameObject _patrolButton;
         [SerializeField] private GameObject _stopButton;
-        [SerializeField] private GameObject _produceUnitButton;
+        [SerializeField] private GameObject _produceChomperButton;
+        [SerializeField] private GameObject _produceSpiderButton;
         [SerializeField] private GameObject _setRallyButton;
 
         private Dictionary<Type, GameObject> _buttonsByExecutorType;
@@ -28,7 +29,8 @@ namespace View
             _buttonsByExecutorType.Add(typeof(ICommandExecutor<IMoveCommand>), _moveButton);
             _buttonsByExecutorType.Add(typeof(ICommandExecutor<IPatrolCommand>), _patrolButton);
             _buttonsByExecutorType.Add(typeof(ICommandExecutor<IStopCommand>), _stopButton);
-            _buttonsByExecutorType.Add(typeof(ICommandExecutor<IProduceUnitCommand>), _produceUnitButton);
+            _buttonsByExecutorType.Add(typeof(ICommandExecutor<IProduceChomperCommand>), _produceChomperButton);
+            _buttonsByExecutorType.Add(typeof(ICommandExecutor<IProduceSpiderCommand>), _produceSpiderButton);
             _buttonsByExecutorType.Add(typeof(ICommandExecutor<ISetRallyPointCommand>), _setRallyButton);
         }
 
@@ -39,15 +41,16 @@ namespace View
                 .GetComponent<Selectable>().interactable = false;
         }
 
-        public void UnblockAllInteractions() => SetInteractible(true);
+        public void UnblockAllInteractions() => SetInteractable(true);
 
-        private void SetInteractible(bool value)
+        private void SetInteractable(bool value)
         {
             _attackButton.GetComponent<Selectable>().interactable = value;
             _moveButton.GetComponent<Selectable>().interactable = value;
             _patrolButton.GetComponent<Selectable>().interactable = value;
             _stopButton.GetComponent<Selectable>().interactable = value;
-            _produceUnitButton.GetComponent<Selectable>().interactable = value;
+            _produceChomperButton.GetComponent<Selectable>().interactable = value;
+            _produceSpiderButton.GetComponent<Selectable>().interactable = value;
             _setRallyButton.GetComponent<Selectable>().interactable = value;
         }
 
@@ -73,6 +76,7 @@ namespace View
         {
             foreach (var kvp in _buttonsByExecutorType)
             {
+                kvp.Value.GetComponent<Button>().onClick.RemoveAllListeners();
                 kvp.Value.SetActive(false);
             }
         }
