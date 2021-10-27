@@ -10,7 +10,6 @@
         <e p="Code" t="Include">
           <e p="Absractions" t="Include">
             <e p="Abstractions.asmdef" t="Include" />
-            <e p="AwaitedBase.cs" t="Include" />
             <e p="Commands" t="Include">
               <e p="CommandExecutorBase.cs" t="Include" />
               <e p="CommandInterfaces" t="Include">
@@ -38,9 +37,6 @@
             <e p="IUnit.cs" t="Include" />
             <e p="IUnitProducer.cs" t="Include" />
             <e p="IUnitProductionTask.cs" t="Include" />
-            <e p="ScriptableObjectValueBase.cs" t="Include" />
-            <e p="StatefulScriptableObjectValueBase.cs" t="Include" />
-            <e p="StatelessScriptableObjectValueBase.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
             <e p="AttackerParallelnfoUpdater.cs" t="Include" />
@@ -48,15 +44,7 @@
             <e p="AutoAttackCommand.cs" t="Include" />
             <e p="AutoAttackEvaluator.cs" t="Include" />
             <e p="CollisionDetector.cs" t="Include" />
-            <e p="CommandExecutor" t="Include">
-              <e p="AttackCommandExecutor.cs" t="Include" />
-              <e p="CommandExecutorsInstaller.cs" t="Include" />
-              <e p="MoveCommandExecutor.cs" t="Include" />
-              <e p="PatrolCommandExecutor.cs" t="Include" />
-              <e p="ProduceUnitCommandExecutor.cs" t="Include" />
-              <e p="SetRallyPointCommandExecutor.cs" t="Include" />
-              <e p="StopCommandExecutor.cs" t="Include" />
-            </e>
+            <e p="CommandExecutorsInstaller.cs" t="Include" />
             <e p="Core.asmdef" t="Include" />
             <e p="CoreInstaller.cs" t="Include" />
             <e p="FactionMember.cs" t="Include" />
@@ -64,17 +52,31 @@
             <e p="GameStatus.cs" t="Include" />
             <e p="Highlighter.cs" t="Include" />
             <e p="MainBuilding" t="Include">
+              <e p="ChomperBuilding.cs" t="Include" />
+              <e p="ChomperBuildingCommandQueue.cs" t="Include" />
               <e p="MainBuilding.cs" t="Include" />
               <e p="MainBuildingCommandQueue.cs" t="Include" />
               <e p="MainBuildingInstaller.cs" t="Include" />
+              <e p="ProduceChomperExecutor.cs" t="Include" />
+              <e p="ProduceSpiderExecutor.cs" t="Include" />
+              <e p="ProduceUnitExecutorBase.cs" t="Include" />
+              <e p="SetRallyPointCommandExecutor.cs" t="Include" />
+              <e p="SpiderBuilding.cs" t="Include" />
+              <e p="SpiderBuildingCommandQueue.cs" t="Include" />
             </e>
             <e p="MoveCommand.cs" t="Include" />
             <e p="StopCommand.cs" t="Include" />
             <e p="TimeModel.cs" t="Include" />
             <e p="Unit" t="Include">
+              <e p="AttackCommandExecutor.cs" t="Include" />
               <e p="ChomperCommandsQueue.cs" t="Include" />
               <e p="ChomperInstaller.cs" t="Include" />
+              <e p="ChomperUnit.cs" t="Include" />
               <e p="MainUnit.cs" t="Include" />
+              <e p="MoveCommandExecutor.cs" t="Include" />
+              <e p="PatrolCommandExecutor.cs" t="Include" />
+              <e p="SpiderUnit.cs" t="Include" />
+              <e p="StopCommandExecutor.cs" t="Include" />
               <e p="UnitMovementStop.cs" t="Include" />
               <e p="UnitProductionTask.cs" t="Include" />
             </e>
@@ -86,8 +88,8 @@
               <e p="CommandsRealization.asmdef" t="Include" />
               <e p="MoveCommand.cs" t="Include" />
               <e p="PatrolCommand.cs" t="Include" />
-              <e p="ProduceUnitCommand.cs" t="Include" />
-              <e p="ProduceUnitCommandHeir.cs" t="Include" />
+              <e p="ProduceChomperCommandHeir.cs" t="Include" />
+              <e p="ProduceSpiderCommandHeir.cs" t="Include" />
               <e p="SetRallyPointCommand.cs" t="Include" />
               <e p="StopCommand.cs" t="Include" />
             </e>
@@ -102,7 +104,8 @@
                   <e p="CommandCreatorBase.cs" t="Include" />
                   <e p="MoveCommandCommandCreator.cs" t="Include" />
                   <e p="PatrolCommandCommandCreator.cs" t="Include" />
-                  <e p="ProduceUnitCommandCommandCreator.cs" t="Include" />
+                  <e p="ProduceChomperCommandCreator.cs" t="Include" />
+                  <e p="ProduceSpiderCommandCreator.cs" t="Include" />
                   <e p="SetRallyPointCommandCreator.cs" t="Include" />
                   <e p="StopCommandCommandCreator.cs" t="Include" />
                 </e>
@@ -134,10 +137,14 @@
             <e p="AssetsContext.cs" t="Include" />
             <e p="AssetsInjector.cs" t="Include" />
             <e p="AsyncExtensions.cs" t="Include" />
+            <e p="AwaitedBase.cs" t="Include" />
             <e p="Deconstructors.cs" t="Include" />
             <e p="IAwaitable.cs" t="Include" />
             <e p="IAwaiter.cs" t="Include" />
             <e p="InjectAssetAtribute.cs" t="Include" />
+            <e p="ScriptableObjectValueBase.cs" t="Include" />
+            <e p="StatefulScriptableObjectValueBase.cs" t="Include" />
+            <e p="StatelessScriptableObjectValueBase.cs" t="Include" />
             <e p="UniRxExtensions.cs" t="Include" />
             <e p="Utils.asmdef" t="Include" />
           </e>
@@ -161,6 +168,9 @@
               <e p="Terrain.shader" t="Include" />
               <e p="Vegetation.shader" t="Include" />
             </e>
+          </e>
+          <e p="PB_Spider" t="Include">
+            <e p="ReadMe.txt" t="Include" />
           </e>
           <e p="TextMesh Pro" t="Include">
             <e p="Fonts" t="Include">

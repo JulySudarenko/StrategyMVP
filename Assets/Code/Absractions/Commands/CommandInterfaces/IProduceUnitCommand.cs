@@ -8,4 +8,14 @@ namespace Interfaces
         float ProductionTime { get; }
         string UnitName { get; }
     }
+    
+    public interface IProduceChomperCommand : IProduceUnitCommand
+    {
+
+    }
+    
+    public interface IProduceSpiderCommand : IProduceUnitCommand
+    {
+
+    }
 }

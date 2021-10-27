@@ -8,6 +8,5 @@ public sealed class AutoAttackCommand : IAttackCommand
     public AutoAttackCommand(IAttackable target)
     {
         Target = target;
-        Debug.Log($"Unit can attack {target}");
     }
 }
